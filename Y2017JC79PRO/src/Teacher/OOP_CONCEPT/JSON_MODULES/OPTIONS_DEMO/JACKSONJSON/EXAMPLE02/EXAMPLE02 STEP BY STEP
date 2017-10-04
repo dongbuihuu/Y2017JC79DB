@@ -1,0 +1,83 @@
+JACKSON JSON STEP BY STEP
+--------------------------------------
+A - GHI DỮ LIỆU XUỐNG FILE VỚI HASHMAP:
+1. Khai báo & khởi tạo 1 Hashmap<Integer, List<Student>>?
+   Hashmap<Integer, List<Student>> objHash = new ...();
+   
+2. Khai báo & khởi tạo 1 List<Student> bao gồm 03 đối tượng Sinh Viên
+     với đầy đủ thông tin.
+     List<Student> lisStudent = new ArrayList<List<Student>>();
+     Student SV001 = new ...();
+     Student SV002 = new ...();
+     Student SV003 = new ...();
+     --> lisStudent.Add(SV001);
+     --> lisStudent.Add(SV002);
+     --> lisStudent.Add(SV003);
+     
+3. Đưa danh sách Sinh Viên vào HashMap?
+  --> objHash.put(0, lisStudent);
+  
+4. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "json" };
+        FileNameExtensionFilter filter = 
+        			new FileNameExtensionFilter("JSON Database files", 
+        								EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {           
+            FileName = objFile.getSelectedFile().getPath();
+        }
+5. Khai báo & khởi tạo ObjectMapper
+  --> ObjectMapper objMap = new ObjectMapper();
+  
+6. Thực thi việc ghi dữ liệu xuống file *.json
+ --> objMap.WriteValue(new File(...), objHash);
+ 
+ B - ĐỌC DỮ LIỆU TRONG FILE *.JSON --> HASHMAP JAVA:
+ 1. Khai báo & khởi tạo ObjectMapper
+  --> ObjectMapper objMap = new ObjectMapper();
+  
+ 2. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "json" };
+        FileNameExtensionFilter filter = 
+        			new FileNameExtensionFilter("JSON Database files", 
+        								EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {           
+            FileName = objFile.getSelectedFile().getPath();
+        }
+  3. Khai báo & khởi tạo 1 Hashmap<Integer, List<Student>>?
+   Hashmap<Integer, List<Student>> objHash =  ....
+   
+  4. Sử dụng phương thức ReadValue để đọc dữ liệu từ file JSON
+     <Sử dụng TypeReferences> trong việc tường minh ép kiểu dữ liệu từ JSON
+     chuyển thành Hashmap<Integer, List<Student>>.
+    try {
+            HashMap<Integer, List<Students>> objHash = 
+                        objOMaper.readValue(new File(Path), 
+                       new TypeReference<HashMap<Integer, List<Students>>>() {
+            });
+      }
+  
+  5. Duyệt HashMap và hiển thị danh sách Sinh Viên?
+    --> List<Students> lis = objHash.get(0);
+    
+  6. Sử dụng vòng lặp For hoặc ForEach để duyệt và hiển thị dữ liệu?
+    

@@ -1,0 +1,48 @@
+	Interface Overviews
+	--------------------------	
+	1. Interface là gì?
+	 - Giao diện interface là 1 lớp trừu tượng.
+	 - Giao diện được sử dụng để đạt được trừu tượng hoàn toàn trong java.
+	 - Giao diện trừu tượng là 1 bản khuôn mẫu chuẩn cho các lớp con sẽ 
+	 kế thừa & thực thi bản mẫu đó.
+	 - Giao diện sẽ thể hiện được cơ chế đa kế thừa mà bình thương 1 lớp 
+	 đối tượng ko thể hiện được.
+	
+	2. Cú pháp khai báo?
+	     		interface interface_name { }
+	     		Ví dụ:
+	     				interface IMoveable 
+						{ 
+							 int AVERAGE-SPEED=40;
+							 void move();
+						}
+	  * Ghi chú:
+	     --> Trình biên dịch tự động chuyển đổi phương thức 
+	     <Converts method> của giao diện là: public và abstract.
+	     --> Dữ liệu thành viên <Data members> là: public, static và 
+	     			final theo mặc định.
+	     
+	3. Đặc điểm của Interface?
+	   -	Ko có xử lý phần thân --> ko sử dụng ngoặc xoắn {}
+	   -	Tất cả các thành phần khi đc định nghĩa trong giao diên thì đều là trừu tượng.
+	   -	Sử dụng từ khóa "interface"  để định nghĩa đây là giao diện trừu tượng.
+	   -	Lớp con khi thực thi (implement) phải thực thi đầy đủ những thành phần trừu tượng mà giao diện đó đề ra.
+	   -	Giao diện trừu tượng ko cho tạo ra đối tượng từ lớp giao diện đó <Instance Objects> 
+	        nhưng lại có thể tạo đối tượng thông qua sự thể hiện của 1 lớp đối tượng khác. 
+	     	==> Nhưng bắt buộc lớp con đó phải dẫn xuất hoặc thực thi từ giao diện trừu tượng
+	     	này mới Okie.
+	   -	Hỗ trợ cơ chế đa kế thừa --> 1 lớp giao diện có thể kế thừa từ n lớp giao diện khác
+	     	chỉ cần phân cách bằng dấu phẩy (,).
+	   -	Một lớp đối tượng có thể kế thừa từ 1 lớp đối tượng khác & thực thi cho n lớp giao diện.
+	       class A  extend B
+	               implements IBuss, IControl,...
+	               
+	   
+	 4.  Qui tắc khi sử dụng giao diện - Interfaces
+	  -		Phương thức bên trong giao diện ko được khai báo là "Static, final, native hoặc strictfp.
+	  -		Tất cả các biến khai báo trong giao diện ngầm định là "public static final" <Hằng số>.
+	  -		Tất cả các phương thức khai báo bên trong Java Interfaces ngầm định là "public" và "abstract". 
+	        Ngay cả khi bạn không sử dụng từ khóa public hoặc abstract.
+	  -		Giao diện có thể kế thừa 1 hoặc nhiều giao diện khác.
+	  -		Giao diện không thể thực thi từ 1 lớp <implement a class>.  
+  

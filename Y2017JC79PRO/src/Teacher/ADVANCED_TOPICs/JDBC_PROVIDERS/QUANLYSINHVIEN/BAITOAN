@@ -1,0 +1,31 @@
+Viết 1 ứng dụng Quản lý thông tin Sinh Viên của trường ĐH A. Thông tin
+chi tiết như sau:
+ - Qui tắc Quản lý như sau:
+  + Một lớp học có nhiều sinh viên thuộc của lớp học đó.
+  + Một sinh viên chỉ thuộc về 1 lớp học.
+ - Nghiệp vụ Quản lý:
+  + Xem danh sách Sinh viên của từng lớp học.
+  + Thêm thông tin Lớp học.
+  + Thêm thông tin Sinh viên.
+  + Thoát ứng dụng.
+ - Chi tiết thông tin của các đối tượng:
+  a. Lớp Học:
+   - MaLop : int
+   - TenLop: nvarchar
+   - SoSinhVien: int
+   
+  b. Sinh Viên:
+   - MaSinhVien: int
+   - HovaTen: nvarchar
+   - DienThoai: nvarchar
+   - DiaChi: nvarchar
+   - MaLop: int
+ - Giao diện yêu cầu:
+  (Xem hình ảnh mô phỏng)
+  ------------------------------------------------------------------------------------------
+   - Thời gian nộp bài trước 12h đêm hôm nay - Ngày 30/08/2016. 
+   - Sau thời gian này bài làm ko được tính và học viên đó phải nộp 50K/
+   	 1 lần vi phạm.
+   - Học viên ko làm bài thì sẽ phải nộp 200K/1 lần vi phạm.
+  ------------------------------------------------------------------------------------------
+   

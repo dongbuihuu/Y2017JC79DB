@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMIC>
+	<Teacher Id = "1">
+		<TeacherId>T001</TeacherId>
+		<Name>Mr A</Name>
+	</Teacher>
+	<Teacher Id = "2">
+		<TeacherId>T002</TeacherId>
+		<Name>Mr B</Name>
+	</Teacher>
+</IMIC>

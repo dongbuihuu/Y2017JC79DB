@@ -1,0 +1,25 @@
+Using try and catch
+--------------------------
+- Try được sử dụng để bảo vệ một khối mã trong đó ngoại lệ có thể xảy ra --> khối mã này được gọi là 
+	"Khu vực được bảo vệ"<called guarded region>.
+- Khi các ngoại lệ mà xảy ra được liệt kê trong khối 
+catch thì ngoại lệ được bàn giao cho các khối catch mà 
+   sau đó sẽ xử lý nó.
+   
+- Ví dụ:
+		public static void main(String args[])
+ 		{
+  				int a,b,c;
+  				try
+  				{
+					   a=0;
+					   b=10;
+					   c=b/a;
+   						System.out.println("This line will not be executed");
+ 				 }
+  				catch(ArithmeticException e)
+  				{
+   					System.out.println("Divided by zero"); 
+  				}
+  				System.out.println("After exception is handled");
+		 }

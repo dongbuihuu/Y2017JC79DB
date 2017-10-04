@@ -1,0 +1,78 @@
+JACKSON JSON STEP BY STEP
+--------------------------------------
+A - GHI DỮ LIỆU XUỐNG FILE VỚI LIST<STUDENT>:
+1. Khai báo & khởi tạo 1 List<Student>?
+   List<Student> lisStudent = new ...();
+   
+2. Khai báo & khởi tạo 03 đối tượng Sinh Viên
+     với đầy đủ thông tin.    
+     Student SV001 = new ...();
+     Student SV002 = new ...();
+     Student SV003 = new ...();
+     
+     --> lisStudent.Add(SV001);
+     --> lisStudent.Add(SV002);
+     --> lisStudent.Add(SV003);
+       
+3. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "json" };
+        FileNameExtensionFilter filter = 
+        			new FileNameExtensionFilter("JSON Database files", 
+        								EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {           
+            FileName = objFile.getSelectedFile().getPath();
+        }
+        
+4. Khai báo & khởi tạo ObjectMapper
+  --> ObjectMapper objMap = new ObjectMapper();
+  
+5. Thực thi việc ghi dữ liệu xuống file *.json
+ --> objMap.WriteValue(new File(...), lisStudent);
+ 
+ B - ĐỌC DỮ LIỆU TRONG FILE *.JSON --> LIST<STUDENT> JAVA:
+ 1. Khai báo & khởi tạo ObjectMapper
+  --> ObjectMapper objMap = new ObjectMapper();
+  
+ 2. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "json" };
+        FileNameExtensionFilter filter = 
+        			new FileNameExtensionFilter("JSON Database files", 
+        								EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {           
+            FileName = objFile.getSelectedFile().getPath();
+        }
+        
+  3. Khai báo & khởi tạo 1  List<Student>?
+      List<Student> lisStudent =  ....
+   
+  4. Sử dụng phương thức ReadValue để đọc dữ liệu từ file JSON
+     <Sử dụng TypeReferences> trong việc tường minh ép kiểu dữ liệu từ JSON
+     chuyển thành Hashmap<Integer, List<Student>>.
+    try {
+            lisStudent = objOMaper.readValue(new File(Path), 
+                       new TypeReference<List<Students>>() {
+            });
+      }
+      
+   5. Sử dụng vòng lặp For hoặc ForEach để duyệt và hiển thị dữ liệu?
+    

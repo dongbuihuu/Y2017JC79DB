@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMIC>
+	<Student Id="1">
+		<RollNo>SV001</RollNo>
+		<FullName>Nguyễn Văn A</FullName>
+		<Mark>8.5</Mark>
+	</Student>
+	<Student Id="2">
+		<RollNo>SV002</RollNo>
+		<FullName> Trần Thị B</FullName>
+		<Mark>9.5</Mark>
+	</Student>
+	<Student Id="3">
+		<RollNo>SV003</RollNo>
+		<FullName>Hoàng Văn C</FullName>
+		<Mark>7.5</Mark>
+	</Student>
+</IMIC>

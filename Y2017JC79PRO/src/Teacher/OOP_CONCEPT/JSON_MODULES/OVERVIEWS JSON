@@ -1,0 +1,87 @@
+OVERVIEWS JSON DATABASE FILES
+----------------------------------------------
+- Database Files
+  ---------------------------------------------
+    1) JSON?
+         --> JSON Files <Read/Write> *.json
+         --> Webservice API <API JSON> browser.
+    2) XML?
+         --> XML Files <Read/Write> *.xml
+         --> Webservice API <API XML> browser.
+    3) SERIZABLE?
+         --> Serizable Files <Read/Write> *.dat | *.tmp
+    
+ >> 1 - JSON DATABASE FILES <<
+ a. JSon là gì? 
+   - Là công nghệ cho phép chúng ta có thể :
+     + Lưu trữ dữ liệu theo dạng files <tồn tại vật lý trên máy> *. json
+     + là CSDL dạng files ko cấu trúc & ko có quan hệ.
+     + Truyền tải dữ liệu trên đường mạng đến các thiết bị đầu cuối <Tương tác giữa Client - Server>. 
+         Thiết bị đầu cuối có thể là PC, Mobile Apps, Table,...         
+         --> Xử lý số liệu với Files.
+         --> Xử lý số liệu qua online<browser>.
+          (Sử dụng các API Service --> XML/JSON Return)
+   
+   b. Các bên cung cấp công nghệ này?
+    -   Google JSON <GSON>
+    -   Jackson JSON <Jackson-Json> - jackson-all-1.9.0.jar
+    -   JSON Sample <JSample> ---> Ko nên xài
+    
+   c. Format của JSON?
+       - Đối với kiểu Object:
+         { "RollNo": 100, "FullName": "Nguyễn Văn A", "Mark": 8.5}  //01 đối tượng
+         
+       - Đối với kiểu danh sách Object (List<Object>)
+         [
+               {"RollNo": 100, "FullName": "Mr A",...},
+               {"RollNo": 200, "FullName": "Mr B",...},
+               {"RollNo": 300, "FullName": "Mr C",...}
+          ]
+          
+       - Đối với kiểu danh sách Object (List<Object>)
+         { "ReturnCode":0,
+            "ErrorMessage": null,
+            "TotalRecord":100,
+            "Data": [
+                       {"RollNo": 100, "FullName": "Mr A",...},
+                       {"RollNo": 200, "FullName": "Mr B",...},
+                       {"RollNo": 300, "FullName": "Mr C",...}
+               ]         
+         }          
+          
+   d. Thực hiện các sample - JackSon JSON<jackson-all-x.x.jar>
+     + BÀI TẬP 01: WRITE
+        --> Cho sẵn 01 đối tượng Student trong Java.
+        --> Chuyển thành format JSon.
+        --> Lưu trữ xuống file Student.json. //C:Data/Student.json
+        --> Đưa ra thông báo lưu thành công!
+        
+     + BÀI TẬP 02: READ
+        --> Cho sẵn 01 file dữ liệu *.json.
+        --> Đọc dữ liệu trong file.
+        --> Chuyển thành đối tượng trong Java.
+        --> Hiển thị đầy đủ thông tin ra ngoài màn hình.
+        
+     + BÀI TẬP 03: 
+        --> Cho sẵn 01 danh sách đối tượng List<Student> trong Java.
+        --> Chuyển thành format JSon.
+        --> Lưu trữ xuống file Student.json. //C:Data/Student.json
+        --> Đưa ra thông báo lưu thành công!
+        
+     + BÀI TẬP 04: 
+        --> Cho sẵn 01 file dữ liệu *.json.
+        --> Đọc dữ liệu trong file.
+        --> Chuyển thành danh sách đối tượng trong Java.
+        --> Hiển thị đầy đủ thông tin ra ngoài màn hình.
+     			
+     + BÀI TẬP 05: 
+        --> Nhận được một số các API Server Online.
+        --> Đọc các API Service đó qua Browers.
+        --> Bindding thông tin vào các đối tượng trong Java.
+        --> Hiển thị đầy đủ thông tin ra ngoài màn hình.
+            <Sử dụng 02 Components là : JackSon-Json & Google Gson>
+            
+     			
+     
+     
+    

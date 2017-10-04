@@ -1,0 +1,47 @@
+BÀI TOÁN 01: Viết chương trình Đăng nhập vào Facebook. Yêu cầu người
+   dùng nhập vào Email và Mật khẩu. Nếu người dùng ko nhập vào thì đưa
+   ra thông báo "Bạn cần phải nhập đầy đủ thông tin". Tiếp tục để người
+   dùng nhập vào.
+      --> TH01: Tài khoản có tồn tại trên hệ thống --> "Chúc mừng bạn ...".
+      --> TH02: Tài khoản ko tồn tại thì đưa ra thông báo --> "Rất tiếc...".
+   
+   * Hướng dẫn:
+   -----------------
+     - Kiểm tra để đảm bảo người dùng có nhập vào giá trị:
+          String sEmail = "";
+          sEmail = dt.NextLine();
+          if(sEmail.IsEmpty())
+               System.out.println("Yêu cầu bạn ...");
+               
+     - Sử dụng hàm equals() để so sánh giá trị kiểu chuỗi và đối tượng.
+          if(sEmail.equals("abc@gmail.com")  && sPassWord.equals("..."))
+               System.out.println("....");
+               
+      - Sử dụng do..while() để cho phép người dùng làm việc liên tục với ứng
+      dụng của chúng ta?
+      
+        String sExit = "";
+		Scanner dt = new Scanner(System.in);		
+		do{	
+			 ...
+			System.out.println("Bạn đã sử dụng chán chưa? Y/N");
+			sExit = dt.nextLine();				
+		}while(!sExit.toUpperCase().equals("Y"));
+		System.out.println("Cảm ơn bạn đã sử dụng phần mềm của chúng tôi :D");
+		
+
+BÀI TOÁN 02: Viết chương trình đưa ra được số Ngày theo Tháng/Năm mà
+người dùng nhập vào cho chúng ta.
+
+BÀI TOÁN 03: Viết chương trình tính toán Cộng - Trừ  - Nhân - Chia?
+ 
+  * Hướng dẫn:
+  -----------------
+  System.out.println("- Mời nhập số a?");
+  String sTemp = dt.Nextline();   //"8.5"
+  if(sTemp.isEmpty())
+     ...
+  else
+    double dNumA = Double.parseDouble(sTemp);    
+  
+

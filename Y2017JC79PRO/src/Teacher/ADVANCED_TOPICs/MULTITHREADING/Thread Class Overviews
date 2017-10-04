@@ -1,0 +1,20 @@
+Thread Class Overviews
+-------------------------------
+- Thread Class là nền tảng cho các hệ thống xử lý đa luồng trong Java.
+- Cùng với giao diện Runnable cũng được sử dụng để Tạo & chạy các tiểu 
+   trình trong việc sử dụng tính năng đa luồng trong Java.
+ 
+>> Constructors of Thread class <<
+	1. Thread ( )
+	2. Thread ( String str )
+	3. Thread ( Runnable r )
+	4. Thread ( Runnable r, String str)	
+
+	+ setName(): Thiết lập Tên cho Thread
+	+ getName():	 Lấy về Tên hiện thời của Thread
+	+ getPriority():	 Nhận về độ ưu tiên
+	+ isAlive(): Kiểm tra xem Thread có còn đang chạy?
+	+ join(): Chờ cho đến khi 1 tiến trình chạy kết thúc
+	+ run(): Điểm bắt đầu cho 1 tiến trình.
+	+ sleep(?): Tạm dừng tiến trình trong khoảng thời gian qui định.
+	+ start(): Bắt đầu 1 tiến trình bằng cách gọi phương thức Run().

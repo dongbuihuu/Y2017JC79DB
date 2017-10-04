@@ -1,0 +1,48 @@
+Câu hỏi 01: Biến trong lập trình là gì?
+-----------------------------------------------
+   * Overviews:
+	--> Là 1 đối tượng do chúng ta tự định nghĩa ra.
+	      + Ko chứa ký tự đặc biệt.
+	      + Ko chứa ký tự khoảng trắng,
+	      + Ko chứa ký tự dấu.
+	      + Thường bắt đầu bằng ký tự chữ. 
+	--> Khi khởi tạo đối tượng biến này ngôn ngữ lập trình sẽ ra lệnh
+		  cho máy cấp phát vùng nhớ  vật lý cho nó với kích thước dựa trên
+		  các kiểu dữ liệu khác nhau.
+	--> Ngôn ngữ lập trình sẽ chia ra làm nhiều kiểu dữ liệu khác nhau
+		  để sử dụng cho việc khai báo biến cũng như tối ưu kích thước khi
+		  sử dụng biến trong lập trình.
+	--> Ngôn ngữ lập trình chia ra làm 2 loaij dữ liệu chính cho biến:
+			a. Kiểu dữ liệu cơ sở: 
+  			 	+ byte, short, int, long, float, double, boolean, String
+
+			b. Kiểu dữ liệu tham chiếu:
+  				+ Array, ArrayList, List, Hashmap, Hashtable, Linked, Objects
+  	* Demo:
+  	   + Số nguyên:
+  	     byte b01;
+  	     short sh02;
+  	     int i03;
+  	     long l04;
+  	     
+ Câu hỏi 02: Giao tiếp giữa người & máy qua những giao tiếp nào?
+ -----------------------------------------------------------------------------------
+ 	a. Giao tiếp qua GUI.
+ 		--> Sử dụng SWing Components để thiết kế giao diện người dùng, 
+ 				gọi là GUI <Graphic User Interfaces>.
+ 		--> Người dùng dễ dàng để tương tác & sử dụng các tính năng của ứng dụng. 		
+ 		--> Giảm nỗ lực phát triển dự án.
+ 		--> Dễ dàng hơn trong việc bảo trì & nâng cấp dự án.
+ 		....
+ 				
+ 	b. Giao tiếp qua Console.
+ 		--> Sử dụng các phát biểu dòng lệnh để tương tác với người dùng như:
+ 			+ System.out.Println() : Hiển thị thông tin ra ngoài màn hình.
+ 			+ Scanner() : Lấy giá trị người dùng nhập vào để xử lý.
+ 		--> Khó khăn trong vấn đề tương tác & sử dụng.
+ 		--> Nỗ lực phát triển dự án rất nhiều.
+ 		--> Khó khăn trong bảo trì dự án & nâng cấp dự án.
+ 		......
+ 		
+ 	
+ 	

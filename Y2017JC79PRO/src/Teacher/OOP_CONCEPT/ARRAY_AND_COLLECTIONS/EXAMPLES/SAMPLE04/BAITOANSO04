@@ -1,0 +1,14 @@
+* Bài tập số 04: Cho phép người nhập vào tối đa 100 phần tử
+                kiểu Student{iRollNo, sFullName, FirstName, MiddleName, 
+			   LastName, dMark, isSex}.
+	- YC:		
+	   +   Hiển thị giá trị các phần tử đó.
+	   +   Tính điểm TB trong tập các Sinh Viên.
+	   +   Sắp xếp thông tin Sv theo điểm từ tăng dần hoặc giảm dần.
+	   +   Đưa ra các ví trị đang chứa SV có điểm cao nhất hoặc thấp
+	         nhất.
+	   +   Xóa 1 sinh viên bất kỳ khỏi mảng đó.
+	   +   Sắp xếp thông tin Sv theo Tên tăng dần hoặc giảm dần.
+ 	   +   Đưa ra danh sách Sv Nam hoặc Sv Nữ có điểm cao nhất
+ 	         hoặc thấp nhất.
+	   +    Random để lấy ra N sinh viên.

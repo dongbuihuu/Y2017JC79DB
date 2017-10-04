@@ -1,0 +1,21 @@
+class Hello
+{
+  public static void main(String[] args) 
+  {
+     System.out.println ("Hello World program");
+  }
+}
+
+------------------------------------------------------------------------------------
+class : từ khóa sử dụng để khai báo lớp đối tượng.
+
+public : là định nghĩa phạm vi truy cập.
+
+static : từ khóa để định nghĩa 1 hàm tĩnh. Để thực thi ko cần phải tạo ra đối tượng của lớp.
+
+void : Là kiểu trả về, có nghĩa là hàm này ko trả về bất cứ giá trị gì.
+
+main : Là hàm được sử dụng để cho phép chạy Test thử 1 lớp Java.
+
+System.out.println : Sử dụng để hiển thị thông tin ra màn hình console.
+------------------------------------------------------------------------------------

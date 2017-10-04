@@ -1,0 +1,18 @@
+Hướng dẫn xây dựng ứng dụng theo mô hình mvc trong Java
+----------------------------------------------------------------------------
+- MVC viết tắt của Model View Controller và được sử dụng để thiết kế những ứng dụng theo mô hình 
+   3 tầng. 
+   --> Tầng Model là tầng thao tác với dữ liệu. 
+   --> Tầng View là tầng hiển thị dữ liệu. 
+   --> Tầng Controller có nhiệm vụ điều khiển các luồng dữ liệu (tầng Model) 
+          và hiển thị dữ liệu (tầng View), là cầu nối giữa tầng Model và tầng View.
+
+-  Chúng ta sẽ tạo một đối tượng Employee hoạt động như một model. 
+-  EmployeeView là lớp hiển thị thông tin nhân viên. 
+-  EmployeeController là lớp điều khiển, chịu trách nhiệm lưu trữ dữ liệu sử dụng đối tượng Employee và hiển thị dữ liệu sử dụng EmployeeView.
+
+ * Yêu cầu:
+    + Cài đặt phần mềm Microsoft SQL Server
+    + Cài đặt cơ sở dữ liệu EMP có một bảng Employees (RollNo int, FullName nvarchar(255), 
+                              Email nvarchar(255), Mark double)
+                              

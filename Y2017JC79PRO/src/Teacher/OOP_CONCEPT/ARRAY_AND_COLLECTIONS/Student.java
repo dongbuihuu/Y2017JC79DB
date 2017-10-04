@@ -1,0 +1,5 @@
+package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ARRAY_AND_COLLECTIONS;
+
+public class Student {
+
+}

@@ -1,0 +1,14 @@
+Throws Keyword Overviews
+-------------------------------------
+- 	Bất kỳ phương thức có khả năng gây ra ngoại lệ cần phải được 
+     liệt kê tất cả các trường hợp ngoại lệ có thể thực hiện của nó.
+	Vì vậy mà bất cứ khi nào gọi phương thức sẽ nhận về những trường 
+	hợp ngoại lệ để xử lý.
+-   Để làm được như vậy thì cần sử dụng từ khóa "throws".
+
+- 	Syntax :
+
+		type method_name(parameter_list) throws exception_list
+		{
+ 			//definition of method
+		}

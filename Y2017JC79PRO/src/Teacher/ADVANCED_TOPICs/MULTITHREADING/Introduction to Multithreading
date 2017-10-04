@@ -1,0 +1,23 @@
+Introduction to Multithreading
+----------------------------------------
+- Một chương trình có thể chia thành nhiều tiến trình xử lý nhỏ 
+(small processes).
+- Mỗi tiến trình nhỏ (small processes) được coi là 1 tiểu trình đơn 
+(single thread).
+- Chương trình đa luồng (Multithreaded programs) 
+chứa 2 hay nhiều tiểu trình 
+   có thể chạy đồng thời.
+--> Điều này có nghĩa rằng 1 chương trình có thể thực hiện cùng 1 lúc 2 hay nhiều nhiệm
+   vụ.
+   Ví dụ: Chương trình có nhiều tiểu trình đang cùng thực hiện việc ghi nội dung vào 1 files và cũng
+   đang có tiểu trình khác thực hiện việc kiểm tra chính tả của nội dung đó.
+   
+- Trong Java Thread thực hiện 2 nhiệm vụ khác nhau:
+  1. Thể hiện của lớp Thread - An instance of Thread class.
+       + Chỉ là 1 đối tượng, giống như bất kỳ đối tượng khác trong java.
+       
+  2. Thực thi Thread - A thread of execution.
+       + Có ý nghĩa là riêng biệt hóa xử lý khi gọi đến các Stack riêng của mình.
+       + Mỗi Thread có 1 cách gọi đến Stack riêng của mình.
+  
+  

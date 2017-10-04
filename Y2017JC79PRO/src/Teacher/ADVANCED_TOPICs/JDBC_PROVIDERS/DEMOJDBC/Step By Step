@@ -1,0 +1,74 @@
+JDBC Provider Step By Step
+------------------------------------
+1. Cần tham chiếu sử dụng các components:
+ + SQL Server: sqljdbc4.jar
+ + MySQL Server: mysql-connector.jar
+ --> Right Click --> Properties --> Java Build Path
+ --> Chọn 02 *.jar file.
+
+2. Thử các nghiệp vụ tương tác & làm việc với CSDL:
+ a. Thử kết nối tới CSDL SQL Server?
+  - Sử dụng giao diện trừu tượng có tên: 
+   --> Connection <java.sql>
+   <Quản lý thông tin kết nối>
+ - Sử dụng lớp đối tượng SQLServerDataSource khi chúng ta 
+   muốn cấu hình tham số kết nối:
+   + ServerName?
+   + UserName?
+   + PassWord?
+   + DatabaseName?
+   + PortNumber?
+ - Sử dụng thuộc tính getConnection để nhận về 1 đối tượng
+   chứa đầy đủ thông tin kết nối.
+ - Kiểm tra trạng thái kết nối(Thành công/Thất bại)?
+
+b. Thử tạo ra 01 file thư viện *.jar để dùng cho module dự án?
+  - Tạo ra 01 Java project.
+  - Tham chiếu sử dụng các file thư viện cho module này.
+    + SQL Server: sqljdbc4.jar
+    + MySQL Server: mysql-connector.jar 
+  - Định nghĩa ra một lớp đối tượng có 01 phương thức:
+    + OpenConnection(?,?,?,?,?) : Connection <java.sql>
+  - Biên dịch ra thành 01 *jar file.
+  - Tham chiếu sử dụng file thư viện cho mod của dự án 
+     hiện thời.
+  - Thử kết nối tới CSDL SQL Server?
+     (Code :D)
+
+ c. Thử truy vấn tới CSDL --> ResultSet<Tập bản ghi>?
+ - Mở kết nối tới CSDL.
+ - Khai báo 02 đối tượng:
+    + ResultSet<java.sql>: Chứa tập bản ghi nhận đc sau thực thi
+        truy vấn.
+    + CallableStatements: Thực thi các truy vấn tới CSDL.
+ - Khởi tạo đối tượng CallableStatements thông qua đối tượng
+    connection.
+ - Cần có 1 phát biểu truy vấn để có thể lấy về tập bản ghi.
+ - Sử dụng phương thức executeQuery(): ResultSet.
+ - Duyệt tập bản ghi trong ResultSet thông qua vòng lặp While()
+    với pt objRs.Next(): T/F?
+ - Để lấy đc giá trị trong từng trường --> sử dụng cú pháp:
+   <variable Name> = <ResultSet object>
+     .get<DataType>(Index or ColumnName)?
+ - Thích làm gì thì làm :D
+
+ d. Kiến thức về Store Procedure trong SQL Server?
+  - Đó chính là Store Procedure:
+    + Lưu trữ các phát biểu truy vấn --> sử dụng nó khi cần.
+    + Cung cấp cơ chế biên dịch --> thông dịch và chạy.
+    + Khai thác được lợi thế về mặt xử lý, thống kê báo cáo vì
+        đây chính là điểm mạnh của nó.
+    + Quản lý tập trung chắc năng, nghiệp vụ trên hệ thống của
+        SQL Server --> hiểu quả trong quá trình maintaince dự án.
+    + Rất rất rất...nhiều tiện ích khác --> Dùng nó đi thôi :D
+ - Có 02 dạng thủ tục:
+    + Ko tham số:
+        Create Proc SP_Event_All()
+    + Có tham số:
+        Create Proc SP_Event_By_Id(@...)
+  - Để ở Java có thể ủy quyền thực thi truy vấn --> cần khai báo
+     và sử dụng CallableStatement<java.sql>
+     
+  e. Hướng dẫn phát triển 01 module hoàn chỉnh?
+   --> Ngon lành rồi :D
+     

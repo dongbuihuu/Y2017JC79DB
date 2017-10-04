@@ -1,0 +1,38 @@
+Enumerations Overviews
+--------------------------------
+- Kiểu Liệt Kê(enumerations) đã được thêm vào ngôn ngữ Java trong JDK5.
+- Là một danh sách hằng số về Tên.
+- Một Enum có thể có: constructors - methods - instance variables.
+- Nó được tạo ra bằng cách sử dụng từ khóa enum.
+- Các Enum có thể là public - Static - final (mặc định).
+- Mặc dù Enum định nghĩa là 1 kiểu lớp đối tượng -->  nhưng lại không thể tạo ra đối tượng từ nó.
+- Biến liệt kê (enumeration variables) sử dụng và khai báo giống cách thông thường khi khai
+   báo biến cơ sở. 
+   
+ >> How to Define and Use an Enumeration <<
+ 	1. Khai báo Enum:
+ 	enum Subject           //Enumeration defined
+	{
+ 		Java, Cpp, C, Dbms
+	}
+	
+	2. Sử dụng Enum:
+	enum WeekDays
+	{ 
+		sun, mon, tues, wed, thurs, fri, sat 
+	}
+
+	class Test
+	{
+ 		public static void main(String args[])
+ 		{
+  			WeekDays wk;
+  			wk = WeekDays.sun;
+  			System.out.println("Today is "+wk);
+ 		}
+	}
+	
+	>> Values( ) and ValueOf( ) method <<
+	 + public static enum-type[ ] values()
+	 + public static enum-type valueOf (String str)
+	

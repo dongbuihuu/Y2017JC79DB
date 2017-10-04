@@ -1,0 +1,5 @@
+package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ABSTRACTIONS.INSTANCE_OBJECT;
+
+public class ControlGUI  extends TextBoxGui{
+	
+}

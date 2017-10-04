@@ -1,0 +1,14 @@
+Bài toán về Serizable
+--------------------------
+Viết 1 chương trình cho phép người dùng thực hiện các chức năng nghiệp vụ sau:
+ - Nhập vào danh sách Sinh Viên. Gồm các thông tin như:
+    + iRollNo: int
+    + sFullName: String
+    + dMark: double
+    + sMobile: String
+ - Lưu toàn bộ danh sách SV xuống file *.dat theo kiểu Serizable.
+ - Hiển thị danh sách toàn bộ Sinh Viên có trong file *.dat lên JTable (hàng / cột tương ứng).
+ - Chọn Cập nhật & Xóa thông tin cho 1 Sinh Viên bất kỳ và đồng bộ lại dữ liệu trong file *.dat.
+ - Chuyển đổi toàn bộ dữ liệu danh sách SV đang có thành kiểu dữ liệu JSON và lưu xuống 1 file
+    khác *.json.
+

@@ -1,0 +1,39 @@
+Abstract VS Interfaces
+----------------------------
+
+Câu hỏi 01: Sự giống và khác nhau giữa Abstract & Iterfaces?
+  a. Giống nhau:
+    - Đều là lớp trừu tượng.
+    - Đều cho phép định nghĩa các thành phần là trừu tượng.
+    - Đều là bản mẫu chuẩn để cho các lớp con kế thừa & thực thi.
+    - Đều bắt lớp dẫn xuất phải thực thi đầy đủ những thành phần là trừu tượng đó.
+    - Đều ko cho phép tạo ra đối tượng trực tiếp phải gián tiếp thông qua lớp đối tượng khác 
+             <điều kiện là lớp dẫn xuất phải kế thừa hoặc thực thi lớp cơ sở>.
+      
+      
+  b. Khác nhau:
+    b.1: Abstract:
+      - Đơn kế thừa.
+      - Có những thành phần ko phải là trừu tượng.
+      - Sử dụng từ khóa class 
+      -  Phải khai báo tường minh public - abstract.
+      - Có thể định nghĩa đc với hàm khởi dựng, biến đối tượng, phương thức
+        ko là trừu tượng
+      
+    b.2: Interface:
+      - Đa kế thừa.
+      - Ko có những thành phần ko phải là trừu tượng.
+      - Sử dụng từ khóa interface.
+      - Mặc định là public - abstract.
+      - Ko cho phép định nghĩa hàm khởi dựng,  ko có pt ko là trừu tượng.
+
+Câu hỏi 02: Nên lựa chọn cái nào & tại sao?
+ - Chọn abstract trong trường hợp muốn sử dụng những 
+    thành phần ko là trừu tượng --> interface ko đáp ứng. Ngược lại
+    thì nên lựa chọn là giao diện trừu tượng <interface>.
+ - Bởi vì với interface thì sự linh hoạt trong cơ chế đa kế thừa sẽ
+    cho người phát triển dễ dàng tái sử dụng, nâng cấp bảo trì các 
+    modules đó.
+ - Interface định nghĩa các thành phần tường minh rõ ràng.
+ ---------------------------------------------------------------------------------
+

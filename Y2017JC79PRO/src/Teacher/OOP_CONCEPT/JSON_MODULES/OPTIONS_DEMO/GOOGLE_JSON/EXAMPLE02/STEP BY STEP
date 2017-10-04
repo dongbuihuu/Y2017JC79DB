@@ -1,0 +1,64 @@
+GOOGLE JSON STEP BY STEP
+--------------------------------------
+A - CHUYỂN DANH SACHS ĐỐI TƯỢNG TRONG JAVA --> JSON FORMAT.
+ 1. Khai báo và khởi tạo đối tượng list<Student>?
+  List<Students> lisStudent = ...
+  
+ 2.  Khai báo và khởi tạo đối tượng của Gson
+        Gson objGson = new Gson();
+ 3. Tích hợp ...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "xml" };
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("XML files", EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            // ParentPath = objFile.getSelectedFile().getParent();
+            FileName = objFile.getSelectedFile().getPath();
+         }
+         
+ 4. Chuyển dữ liệu thành format JSON?
+   --> toJson(objStudent); 
+   
+  5. Sử dụng lớp đối tượng FileWriter cho việc đọc dữ liệu đưa lên luồng -->
+    sử dụng cơ chế ép dữ liệu từ luồng --> ghi xuống file.
+    --> objFW.write(JSonString);
+   
+B - ĐỌC DỮ LIỆU JSON --> DANH SACH ĐỐI TƯỢNG TRONG JAVA SỬ DỤNG GSON?
+ 1. Khai báo và khởi tạo đối tượng của Gson?
+        Gson objGson = new Gson();
+        
+ 2. Tích hợp ...
+        JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "xml" };
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("XML files", EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showOpenDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            // ParentPath = objFile.getSelectedFile().getParent();
+            FileName = objFile.getSelectedFile().getPath();
+         }
+                
+   3. Khai báo 1 đối tượng của luồng là BufferedReader để hỗ trợ cơ chế làm
+    việc là đọc và bindding dữ liệu vào Object trong Java.
+    --> objG.fromJson(objBR, new TypeToken<>...
+    
+    4. Hiển thị thông tin đầy đủ của đối tượng.           
+        
+        
+         --- HẾT ---
+        

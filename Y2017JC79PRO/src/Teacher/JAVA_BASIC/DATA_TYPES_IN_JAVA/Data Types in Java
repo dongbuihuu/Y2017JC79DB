@@ -1,0 +1,60 @@
+Data Types in Java
+------------------------
+- Ngôn ngữ Java có nhiều kiểu dữ liệu.
+- Các kiểu dữ liệu xác định Kích Thước & 
+   Loại Giá Trị có thể được lưu trữ trong 1 định danh.
+- Trong lập trình hướng đối tượng, các kiểu dữ liệu được phân thành 02 loại:
+		1. Kiểu dữ liệu Cơ Sở (Primitive Data type).
+		2. Kiểu dữ liệu tham chiếu (Non-Primitive Data type).
+
+1) Kiểu dữ liệu Cơ Sở - Primitive Data type
+  + char	- ký tự
+  + boolean - luận lý Đúng/Sai
+  + byte - Số nguyên
+  + short	  - Số nguyên
+  + int  - Số nguyên
+  + long  - Số nguyên
+  + float - Số thập phân
+  + double - Số thập phân
+  + String - Kiểu chuỗi
+ 
+2) Kiểu dữ liệu tham chiếu - Non-Primitive(Reference) Data type
+ + Array 1D, 2D, MD
+ + ArrayList<E>
+ + List<E>
+ + HashMap<key,value>
+ + LinkedList<E>
+ + Collection<E>
+ + ...
+ 
+ 3) Khai báo & khởi tạo giá trị cho biến
+ 	* Cú pháp: 
+ 	      a. Cú pháp khai báo biến:
+            <Kiểu dữ liệu>  <Tên biến>;
+          b. Cú pháp khởi tạo giá trị biến:
+             <Tên biến> =  <giá trị cần khởi tạo>;
+             
+ 	* Ví dụ:
+            int  a = 100;
+            short b = 100;
+            boolean c = true;
+            float d = (float)8.5;
+            double e = 9.5;
+            .....
+            
+ 4) Sử dụng biến trong lập trình:
+ 	+ Hiển thị giá trị hiện thời trong biến?
+ 		--> System.out.Println(a);   //100
+ 		--> System.out.Println(b);   //100
+ 		--> System.out.Println(c);   //true
+ 		--> System.out.Println(d);   //8.5
+ 		--> System.out.Println(e);   //9.5
+ 	
+ 	+ Tính toán giá trị của các biến với nhau?
+ 		a = a + 10;
+ 		int c = a + b;
+ 		--> System.out.Println(a);   //110
+ 		--> System.out.Println(c);   //210
+ 
+ 
+ 

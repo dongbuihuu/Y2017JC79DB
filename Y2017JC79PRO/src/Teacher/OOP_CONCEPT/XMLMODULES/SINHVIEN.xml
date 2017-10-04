@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMIC>
+   <HocVien id="1">
+       <MaHocVien>Hv001</MaHocVien>
+       <HovaTen>Nguyễn Văn A</HovaTen>
+       <Email>anv@gmail.com</Email>
+       <DiemThi>8.5</DiemThi>   
+   </HocVien>
+   
+   <HocVien id="2">
+       <MaHocVien>Hv002</MaHocVien>
+       <HovaTen>Trần Thị B</HovaTen>
+       <Email>btt@gmail.com</Email>
+       <DiemThi>9.5</DiemThi>   
+   </HocVien>
+   <HocVien id="3">
+   	<MaHocVien>HV003</MaHocVien>
+   	<HovaTen>Hoàng Văn C</HovaTen>
+   	<Email>chv@gmail.com</Email>
+   	<DiemThi>7.5</DiemThi>
+   </HocVien>
+
+</IMIC>

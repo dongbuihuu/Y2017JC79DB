@@ -1,0 +1,30 @@
+NỘI DUNG GIẢNG DẠY BUỔI HỌC 03 - JAVA CORE
+----------------------------------------------------------------
+1. Kiến thức về Java Basic?
+     - Kiểu dữ liệu trong Java:
+        + Kiểu dữ liệu cơ sở: byte, short, int, long, float, double, 
+          String, boolean, char.
+        + Kiểu dữ liệu tham chiếu: Array, ArrayList, List, HashMap,
+            Collection FrameWorks.
+     - Biến trong lập trình:
+        --> <Kiểu dữ liệu>  <Tên Biến>;
+     - System.out.Println(object);
+     - Scanner nhận giá trị từ bàn phím.
+2. Cấu trúc lập trình trong Java?
+   a. Cấu trúc phân nhánh có điều kiện?
+      - If...Else
+      - Switch...Case 
+     --> Là cơ chế xử lý cho phép lập trình đưa ra các giả sử, giả 
+     thiết có thể sẽ xảy ra.
+     --> Mỗi giả thiết đều có các điều kiện tương ứng.
+     
+   b. Cấu trúc vòng lặp?
+      - While...Loop
+      - Do...While Loop
+      - For
+      - ForEach <Array>
+    --> Là cơ chế xử lý lặp đi lặp lại 1 công việc nào đó.
+    --> Đều có 1 đặc điểm chung là sẽ thoát việc lặp nếu biểu thức
+    điều kiện SAI.
+3. Thực hiện các bài toán thực tế về cấu trúc lập trình?
+

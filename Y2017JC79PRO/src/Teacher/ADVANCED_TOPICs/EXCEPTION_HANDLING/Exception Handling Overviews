@@ -1,0 +1,74 @@
+Exception Handling Overviews
+---------------------------------------
+- Là cơ chế để xử lý các vấn đề lỗi khi chương trình chạy.
+- Sử dụng chúng để xử lý các ngoại lệ, ngăn chặn sự chấm dứt đột ngột của chương trình.
+- Các ngoại lệ có nghĩa là các điều kiện đặc biệt, đó là một vấn đề có thể phát sinh khi chạy chương trình.
+- Một tập hợp những thứ có thể dẫn đến xảy ra trường hợp ngoại lệ, trong đó có: 
+	+ Lỗi lập trình <programmer error>.
+	+ Lỗi phần cứng <hardware failures>.
+	+ Không tìm thấy tài nguyên cần cho xử lý <cannot be found>.
+	+ Cạn kiệt tài nguyên <resource exhaustion>
+	+ ..v..v <etc>
+- Một Java Exception là 1 đối tượng mô tả các ngoại lệ xảy ra trong 1 chương trình. 
+   Khi một sự cố xảy ra<exceptional events> 
+  trong java, một ngoại lệ được cho là được ném ra<to be thrown>.
+   Các mã đó có trách nhiệm làm 1 cái gì đó về ngoại lệ thì được
+  gọi là trình xử lý ngoại lệ <exception handler>.
+  
+  >> 1. Exception class Hierarchy <<
+  (xem chi tiết tại hình ảnh)
+  
+  >> 2. Exception are categorized into 3 category <<
+  a. Ngoại lệ được kiểm soát - Checked Exception
+  	- Các trường hợp Ngoại lệ có thể được dự đoán trước & 
+  	          gợi ý áp dụng bởi các công cụ phát triển tại thời điểm biên dịch.
+  	Ví dụ: 
+  	import java.io.File;
+	import java.io.FileReader;
+
+	public class CheckedExceptions {
+   		public static void main(String args[]){		
+      		File file=new File("E://file.txt");
+      		FileReader fr = new FileReader(file); 
+   		}   
+	}
+  
+  b. Ngoại lệ không được Kiểm soát - Unchecked Exception
+  	- Nó sẽ bỏ qua kiểm soát các vấn đề lỗi có thể xảy ra ở thời điểm biên dịch.
+  	- Unchecked exceptions sẽ kiểm soát những vấn đề đó ở thời điểm chạy<checked at runtime>.
+  	Ví dụ: 
+  		public class UncheckedException
+		{
+ 			public static void main(String args[])
+ 			{
+  					int a = 0;
+ 					int b = 7/a;     // Divide by zero, will lead to exception
+ 			}
+		}
+  
+  c. Lỗi - Error 
+  	- Lỗi này sẽ bị bỏ qua trong mã lập trình bởi vì không có thể làm bất cứ điều gì về một lỗi. 
+  	- Ví dụ: Nếu xảy ra tràn bộ nhớ<stack overflow> một lỗi sẽ phát sinh --> Đây là loại lỗi không
+  	thể xử lý trong mã được.
+  	
+>> 3. Exception Handling Mechanism <<
+- Trong Java, Exception Handling sử dụng 05 từ khóa:
+	+ try
+	+ catch
+	+ throw
+	+ throws
+	+ finally
+
+>> 4. Important points to Remember <<
+	4.1. Nếu bạn không sử dụng các khối try...catch trong chương trình của bạn. 
+		    Java sẽ cung cấp một xử lý ngoại lệ mặc định
+			là sẽ hiển thị các chi tiết ngoại lệ trên thiết bị đầu cuối, bất cứ khi 
+			nào ngoại lệ xảy ra.			
+	4.2. Lớp cơ sở Throwable overrides toString(), để hiển thị thông báo lỗi ở dạng chuỗi.	
+	4.3. Trong trường hợp sử dụng nhiều khối catch thì luôn luôn đảm bảo rằng lớp 
+             con ngoại lệ phải đứng trước các lớp cha ngoại lệ. Ngược lại sẽ 
+               xuất hiện thông báo lỗi khi biên dịch.
+	4.4. Trong trường hợp lồng nhiều try...catch thì khối try bên trong 
+	         sẽ sử dụng khối catch của riêng mình.
+	4.5. Chỉ có các đối tượng của Throwable class hoặc các lớp con của
+	        nó có thể được ném ra <subclasses can be thrown>.

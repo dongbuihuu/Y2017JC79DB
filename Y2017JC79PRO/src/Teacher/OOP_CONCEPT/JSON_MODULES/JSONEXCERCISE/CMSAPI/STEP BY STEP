@@ -1,0 +1,21 @@
+JSON API SERVICES
+-------------------------
+1. Test thử các Api Service có sẵn?
+  + Api Service: 
+     --> http://hoidapit.edu.vn/Service1.svc/API_GetSalonAll 
+2. Viết ra 1 mod thực hiện việc gọi tới API Services để lấy kq trả
+về * Json Format --> Bindding Object trong Java.
+  a. Tạo ta 02 lớp đối tượng sử dụng trong việc bindding dữ
+  liệu từ API service nhận đc
+   --> CarEntity
+   --> CarDetailt
+  b. Định nghĩa 1 nghiệp vụ trong Models thực hiện việc lấy dữ
+liệu từ API --> trả về kiểu chuỗi.
+  --> Nghiệp vụ: readUrl();
+  c. Định nghĩa 1 nghiệp vụ trong Controllers thực hiện việc đọc
+chi tiết chuỗi dữ liệu json nhận về --> bindding vào đối tượng 
+có sẵn:
+    --> Gọi tới nghiệp vụ readUrl(): String.
+    --> Khai báo & khởi tạo Gson ...
+    --> Bindding dữ liệu Json thông qua fromJson<Gson>.
+3. Hiển thị toàn bộ dữ liệu từ đối tượng này ra ngoài màn hình.

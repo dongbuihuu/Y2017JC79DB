@@ -1,0 +1,20 @@
+Throw Keyword Overviews
+------------------------------------
+- Từ khóa throw được sử dụng để ném một lỗi ngoại lệ.
+- Chỉ có đối tượng của lớp Throwable class hoặc các lớp con của nó có thể được ném ra.
+
+- Syntax :
+	throw ThrowableInstance
+	
+>> 1. Creating Instance of Throwable class <<
+	- Có 02 cách có thể để có được một thể hiện của lớp Throwable:
+		1.1. Sử dụng là 1 tham số trong khối catch - Using a parameter in catch block.
+		try{
+			....
+		}catch(Exception ex){
+			throw ex;
+		}		
+		
+		1.2. Tạo ra sự thể hiện thông qua từ khóa new - Creating instance with new operator.
+		
+		

@@ -1,0 +1,6 @@
+-  Yêu cầu:
+   +  Viết chương trình nhập vào 2 số nguyên, sau đó in ra tổng bình phương của chúng.
+
+-   Phân tích:
+   +   Nhập vào 2 số nguyên từ bàn phím.
+   +   Tính tổng theo công thức: S = a*a + b*b.

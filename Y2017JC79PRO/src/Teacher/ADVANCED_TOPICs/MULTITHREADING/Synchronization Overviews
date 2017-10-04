@@ -1,0 +1,15 @@
+Synchronization Overviews
+-----------------------------------
+- Đồng bộ Thread trong  Java là khả năng kiểm soát truy cập của nhiều 
+  tiến trình (multiple threads)  đến các tài nguyên chia sẻ.
+  
+- Đồng bộ hóa Thread trong Java (Java Synchronization) 
+là sự lựa chọn tốt hơn khi mà chúng ta 
+chỉ muốn cho phép từng tiến trình truy cập vào tài nguyên chia sẻ.
+
+>> Thread Synchronization <<
+ - Đồng bộ hóa được thể hiện qua:
+   		1. Synchronized method.
+		2. Synchronized block.
+		3. static synchronization.
+      

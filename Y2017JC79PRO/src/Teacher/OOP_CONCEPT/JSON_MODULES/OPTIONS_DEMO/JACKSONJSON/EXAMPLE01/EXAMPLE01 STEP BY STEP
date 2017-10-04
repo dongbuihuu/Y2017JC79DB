@@ -1,0 +1,52 @@
+JACKSON JSON STEP BY STEP
+--------------------------------------
+A - LƯU DỮ LIỆU XUỐNG FILE JSON:
+1. Tham chiếu sử dụng thư viện của jackson-all-1.9.0.jar?  --> Okie
+2. Định nghĩa 1 lớp đối tượng Sinh Viên <Student>. Gồm:
+   + private int iRollNo;
+   + private String sFullName;
+   + private double dMark;
+    --> Tạo ra các thuộc tính liên quan cho nó.
+    
+3. Tạo ra 1 lớp đối tượng <Example01.java>?
+   --> Khai báo 1 hàm main() để test thử nghiệp vụ.
+   
+4.  Khai báo & khởi tạo ra 01 đối tượng Sinh Viên với đầy đủ thông tin.
+    --> objStudent {100, "Nguyễn Văn A", 8.5}
+    
+5. Khai báo và khởi tạo đối tượng thuộc của lớp đối tượng là
+    (jackson-json-1.9.jar)
+   ObjectMapper objMapper = new ObjectMapper();
+    
+6. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng
+       lưu được file hoặc đọc đc file *.json ở đâu đó.
+       JFileChooser objFile = new JFileChooser();
+        objFile.setCurrentDirectory(new java.io.File("."));
+        objFile.setDialogTitle("Chọn file: ");
+        objFile.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        String[] EXTENSION = new String[] { "json" };
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("XML files", EXTENSION);
+        objFile.setFileFilter(filter);
+        objFile.setMultiSelectionEnabled(false);
+
+        int returnVal = objFile.showSaveDialog(null);
+        String ParentPath = "";
+        String FileName = "";
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            // ParentPath = objFile.getSelectedFile().getParent();
+            FileName = objFile.getSelectedFile().getPath();
+         }
+ 7. Sử dụng phương thức WriteValue() để ghi dữ liệu xuống file *.json
+   -->  objMaper.writeValue(new File(FileName), objStudent);     
+   
+B - ĐỌC DỮ LIỆU TỪ FILE JSON --> OBJECT JAVA:
+ 1. Khai báo và khởi tạo đối tượng thuộc ObjectMapper?
+  --> objMapper = new ObjectMapper();
+ 2. Tích hợp phần mã lệnh cho phép chúng ta có thể dễ dàng
+       lưu được file hoặc đọc đc file *.json ở đâu đó.
+ 3. Khai báo và khởi tạo ra đối tượng Student.
+ 4. Đọc dữ liệu từ file thông qua phương thức <ReadValue()>
+  --> tường minh ép kiểu sang Student <Student.Class>.
+  
+
+ 														---- HẾT ----

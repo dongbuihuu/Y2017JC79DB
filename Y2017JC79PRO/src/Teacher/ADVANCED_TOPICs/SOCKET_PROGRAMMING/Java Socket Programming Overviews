@@ -1,0 +1,25 @@
+Java Socket Programming Overview
+--------------------------------------------
+- Các ứng dụng đều sử dụng mô hình Client-Server. Chi tiết cơ chế làm việc:  
+  + Một chương trình, gọi khối xử lý Server và chờ đợi các kết nối đến 
+     từ phía Client.
+  + Một Client kết nối.
+  + Server & Client sẽ thực hiện việc trao đổi thông tin với nhau.
+  + Client-Server cả 2 đều dừng kết nối với nhau.
+
+- Một số thông tin cần nắm được:
+  + Hosts có các cổng, giá trị từ 0-65535. Server sẽ lắng nghe trên 1 cổng.
+  + Nhiều Client có thể giao tiếp với Server trên cổng nhất định. 
+     Mỗi kết nối Client sẽ được nhận 1 socket riêng trên cổng đó.
+  + Ứng dụng Client nhận được 1 Port và 1 Socket trên máy khách 
+    khi kết nối thành công với máy chủ.
+  
+- 04 ứng dụng sẽ thực hiện:
+   + Tương tác Server/Client 1 chiều: minh họa cách giao tiếp đơn giản, các máy chủ sẽ gửi dữ liệu đến
+       cho Client.
+   + Tương tác Server/Client 2 chiều: Từ hộp thoại giữa Client & Server có thể bao gồm 1 số lượng ko giới
+       hạn các Message qua lại. Các máy chủ sử dụng Thread để phục vụ đc nhiều Client 1 cách hiệu quả.
+   + Hai người chơi trò Tic Toe : Minh họa 1 máy chủ mà cần theo dõi tình trạng của trờ chơi và thông báo
+      cho từng KH. Vì vậy có thể cập nhật các màn hình riêng của họ.
+   + Ứng dụng cho phép nhiều người cùng thảo luận với nhau: Máy chủ đảm nhiệm phải cung cấp thông
+       điệp đến tất cả các Client.

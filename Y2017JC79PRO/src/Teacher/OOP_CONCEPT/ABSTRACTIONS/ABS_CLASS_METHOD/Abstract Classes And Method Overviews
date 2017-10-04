@@ -1,0 +1,18 @@
+Abstract Classes And Method Overviews
+---------------------------------------------------
+1. Overviews
+ - Lớp trừu tượng là 1 bản khuôn mẫu chuẩn cho các lớp con sẽ kế thừa và áp đặt sự
+   thực thi trên bản mẫu đó.
+   
+ - Nó có những đặc điểm sau:
+     +    Ko có xử lý phần thân --> ko sử dụng ngoặc xoắn {}
+     +   Trong 1 lớp trừu tượng nếu có tồn tại 1 phương thức là trừu tượng --> bắt buộc lớp
+      đó cũng phải là trừu tượng <abstract>.
+     +   Sử dụng từ khóa "abstract"  để định nghĩa sự trừu tượng.
+     +   Lớp con khi kế thừa phải thực thi đầy đủ những thành phần trừu tượng mà lớp cơ sở đề ra.
+     +   Có những method ko phải là trừu tượng --> lớp con khi kế thừa ko có áp đặt việc phải
+           thực thi nghiệp vụ đó.
+     +   Lớp trừu tượng ko cho tạo ra đối tượng từ lớp đó <Instance Objects> nhưng lại có thể tạo 
+          đối tượng thông qua sự thể hiện của 1 lớp đối tượng khác. 
+           ==> Nhưng bắt buộc lớp con đó phải dẫn xuất từ lớp trừu tượng này mới Okie.
+      +  Cho phép định nghĩa các hàm khởi dựng.

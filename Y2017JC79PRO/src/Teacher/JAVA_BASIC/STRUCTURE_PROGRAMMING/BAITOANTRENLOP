@@ -1,0 +1,19 @@
+BÀI TOÁN SỐ 01:
+   - Mời nhập vào số a? 
+      --> 10
+   - Mời nhập vào số b? 
+      --> 20
+   - Mời chọn: 0 - Cộng; 1 - Trừ; 2 - Nhân; 3 - Chia?
+      --> 0
+   - a + b = 30.0
+   - Bạn đã tính toán chán chưa? Y/N
+   - Y --> Cảm ơn bạn đã sử dụng phần mềm của chúng tôi :D
+
+BÀI TOÁN SỐ 02:
+  - Mời nhập vào Tháng?
+     --> 2
+  - Mời nhập vào Năm? 
+     --> 2014
+  - Có 28 ngày
+  - Bạn muốn thoát chứ? Y/N
+  - Y --> Cảm ơn bạn đã sử dụng phần mềm của chúng tôi :D

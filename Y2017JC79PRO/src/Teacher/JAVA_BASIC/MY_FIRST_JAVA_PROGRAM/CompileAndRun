@@ -1,0 +1,14 @@
+Steps to Compile and Run your first Java program
+----------------------------------------------------------------
+Bước 1: Mở 1 trình soạn thảo văn bản rồi viết mã như trên.
+
+Bước 2: Lưu files có tên Hello.java
+
+Bước 3: Mở chương trình "command" và đi đến thư mục chứa files java. Giả sử lưu nó trong ổ C:\
+
+Bước 4: Gõ javac Hello.java và ấn Enter để biên dịch mã lệnh. Lệnh này sẽ gọi "Java Compiler" để
+tiến hành biên dịch tập tin chỉ định. 
+
+Bước 5: Gõ java Hello trên chương trình "command" để chạy chương trình.
+
+Bước 6: Bạn sẽ nhìn thấy "Hello world" hiển thị trên chương trình "Command".

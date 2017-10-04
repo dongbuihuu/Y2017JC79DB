@@ -1,0 +1,8 @@
+* Bài tập số 02: Cho phép người nhập vào tối đa 100 phần tử
+                kiểu double. 
+                - YC:
+	+ Hiển thị giá trị các phần tử đó.
+	+ Đưa ra giá trị lớn nhất hoặc nhỏ nhất trong biến mảng.
+	+ Sắp xếp các giá trị theo tăng dần hoặc giảm dần.
+                       --> Sử dụng các thuật toán: buddy sort, selection sort, 
+	          insertion sort,...

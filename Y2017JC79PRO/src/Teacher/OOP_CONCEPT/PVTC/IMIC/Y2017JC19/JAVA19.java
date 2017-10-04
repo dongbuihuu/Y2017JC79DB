@@ -1,0 +1,9 @@
+package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.PVTC.IMIC.Y2017JC19;
+
+import JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.PVTC.IMIC.Y2017JC20.Y2017JC20Classes;
+
+//Phạm vi truy cập vào lớp đối tượng này là: default
+class JAVA19 {
+	//Y2017JC19Classes
+	//Y2017JC20Classes
+}

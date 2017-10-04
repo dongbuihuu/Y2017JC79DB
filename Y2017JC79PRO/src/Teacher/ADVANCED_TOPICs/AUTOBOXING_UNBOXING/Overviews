@@ -1,0 +1,33 @@
+Overviews
+--------------
+- 	Java sử dụng các loại kiểu dữ liệu cơ sở như: int, double hoặc 
+    float để coi là kiểu dữ liệu cơ sở cho việc tăng
+  	hiệu suất xử lý. Nhưng có những tình huống chúng ta cần sự thể hiện 
+  	của đối tượng <object representation>.
+ - Để xử lý tình huống đó Java cung cấp loại đóng gói <type Wrappers>
+   trong đó cung cấp các lớp đóng gói
+   <encapsulate> các kiểu dữ liệu cơ sở vào đối tượng.
+   
+a. Character : Nó đóng gói kiểu char bên trong đối tượng<It encapsulates primitive type char within object>
+    Character (char ch)
+    
+b. Boolean: Nó đóng gói kiểu boolean trong đối tượng<It encapsulates primitive type boolean within object>
+	Boolean (boolean boolValue)
+	
+c. Numeric type wrappers: Đây là những loại thường được sử dụng nhiều 
+nhất
+	+ Byte
+	+ Short
+	+ Integer
+	+ Long
+	+ Float
+	+ Double
+	
+>> Autoboxing and Unboxing <<
+- 	Tính năng Autoboxing & Unboxing được đưa vào từ Java 5.
+-	Autoboxing là một quá trình mà các loại kiểu cơ sở <primitive type> được tự động đóng gói<boxed> vào các kiểu 
+	wrapper tương đương <type wrapper>.
+- 	Auto-Unboxing là một quá trình mà các giá trị của đối tượng sẽ tự động 
+   được lấy ra <automatically extracted> từ một
+	loại kiểu wrapper<type wrapper>.
+	
