@@ -16,7 +16,8 @@ public class SubClass extends SupperClass {
 	}
 
 	public static void main(String[] args) {
-		SupperClass p = new SubClass();
+		SupperClass p = new SubClass(); // da hinh up-casting
+		// SupperClass p = new SupperClass();
 		SubClass.show(p);
 	}
 
