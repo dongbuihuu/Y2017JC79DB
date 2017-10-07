@@ -1,4 +1,4 @@
-package HomeWork.PalindRomes;
+package Teacher.Y2017JC79.java_basic.structure_programming.homework.PalindRomes;
 
 import java.util.Scanner;
 
@@ -29,6 +29,7 @@ public class PalindRome {
 		while (low < hight) {
 			if (s.charAt(low) != s.charAt(hight)) {
 				isPalindrome = false;
+				// return false;
 				break;
 			}
 			low++;

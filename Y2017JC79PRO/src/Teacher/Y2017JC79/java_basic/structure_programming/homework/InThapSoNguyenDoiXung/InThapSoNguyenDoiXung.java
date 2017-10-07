@@ -1,4 +1,4 @@
-package HomeWork.InThapSoNguyenDoiXung;
+package Teacher.Y2017JC79.java_basic.structure_programming.homework.InThapSoNguyenDoiXung;
 
 /*
  * Desc: In tháp số đối xứng như sau:
@@ -29,5 +29,4 @@ public class InThapSoNguyenDoiXung {
 	public static void main(String[] args) {
 
 	}
-
 }

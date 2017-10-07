@@ -1,4 +1,4 @@
-package HomeWork.TowerOfHaNoi;
+package Teacher.Y2017JC79.java_basic.structure_programming.homework.TowerOfHaNoi;
 
 import java.util.Scanner;
 
