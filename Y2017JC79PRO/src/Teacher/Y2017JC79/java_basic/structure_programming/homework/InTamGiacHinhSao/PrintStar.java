@@ -1,4 +1,4 @@
-package HomeWork.InTamGiacHinhSao;
+package Teacher.Y2017JC79.java_basic.structure_programming.homework.InTamGiacHinhSao;
 
 import java.util.Scanner;
 
@@ -33,6 +33,7 @@ public class PrintStar {
 		// Check
 		if (numOfRow < 0)
 			return;
+
 		for (int i = numOfRow; i > 0; i--) {
 			// 1. In ra i khoảng trắng
 			for (int j = 1; j <= i; j++) {
