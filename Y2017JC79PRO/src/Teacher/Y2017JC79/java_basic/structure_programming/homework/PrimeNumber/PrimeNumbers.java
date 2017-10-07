@@ -1,4 +1,4 @@
-package HomeWork.PrimeNumber;
+package Teacher.Y2017JC79.java_basic.structure_programming.homework.PrimeNumber;
 
 import java.util.Scanner;
 
@@ -44,7 +44,7 @@ public class PrimeNumbers {
 		for (int i = 2; i <= Math.sqrt(number); i++) { // Đã tối ưu phép chia
 			if (number % i == 0) {
 				isPrime = false;
-				break;
+				return false; // void
 			}
 		}
 		return isPrime;
