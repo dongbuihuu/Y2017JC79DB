@@ -1,10 +1,11 @@
-package JAVACORE_TRAINING.OBJECT_AND_CLASSES.ARRAY_AND_COLLECTION.STATIC_ARRAY.SAMPLES.BAITOAN01;
+package Teacher.Y2017JC79.arrays.static_array.SINGLE_ARRAY.Sample01;
 
-public class BaiToanSo01 {
+public class Demo_Array {
 	public static void main(String[] args) {
 		// 1. Khai báo biến mảng
 		double[] dArr = new double[10];
 		double[] myArr = { 6.5, 7.5, 8.5, 9.5 }; // 4 phần tử
+		double[] dArray = new double[] { 1.0, 2.5, 88.9, 8.3 }; // Vừa khai báo vừa khởi tạo
 
 		// 2. Đưa giá trị vào biến mảng
 		dArr[0] = 6.5;
@@ -12,6 +13,8 @@ public class BaiToanSo01 {
 		dArr[2] = 8.5;
 		dArr[3] = 9.5;
 		dArr[9] = 5.5;
+
+		// System.out.println(dArr);
 
 		// 3. Hiển thị các giá trị
 		System.out.println("dArr[0] = " + dArr[0]);
