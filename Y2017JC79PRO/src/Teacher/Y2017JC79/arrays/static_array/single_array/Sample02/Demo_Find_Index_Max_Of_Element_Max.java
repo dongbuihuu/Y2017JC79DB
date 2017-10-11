@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.arrays.static_array.Sample02;
+package Teacher.Y2017JC79.arrays.static_array.single_array.Sample02;
 
 public class Demo_Find_Index_Max_Of_Element_Max {
 

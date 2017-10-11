@@ -1,4 +1,6 @@
-public class CopyArray {
+package Teacher.Y2017JC79.arrays.static_array.single_array.Sample04;
+
+public class CopyToArray {
 
 	public static void main(String[] args) {
 

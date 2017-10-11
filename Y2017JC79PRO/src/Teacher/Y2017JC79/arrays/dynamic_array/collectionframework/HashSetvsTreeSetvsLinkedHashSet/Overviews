@@ -1,0 +1,12 @@
+Overviews
+-------------------------------------------
+- HashSet thực thi sử dụng hash table. Các phần tử sẽ không được sắp xếp.
+- TreeSet đc thực hiện bằng cách sử dụng một cấu trúc cây. Các phần tử trong 1 set được sắp xếp. 
+	Cung cấp một số phương thức để thiết lập như:
+		+ first() <lên đầu>
+		+ last() <xuống cuối>
+		+ headSet() <lên đầu set>
+		+ tailSet() <xuống cuối set>
+- LinkedHashSet nó được thực hiện như là một hash table.
+
+ 

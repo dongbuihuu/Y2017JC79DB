@@ -1,0 +1,39 @@
+Queue interface
+----------------------
+- Java cung cấp Queue interface cho phép có thể lưu giữ & kiểm soát các phần tử
+  trước khi được đưa vào xử lý.
+- Ngoài các phương thức thuộc của Collection, nó cũng hỗ trợ một số thao tác cơ
+   bản để mô phỏng cấu trúc hàng đợi.
+-  Mỗi 1 hoạt động tồn tại dưới 02 hình thức:
+	a. Nếu 1 phương thức xảy ra lỗi (fails) --> 1 lỗi ngoại lệ được ném ra. Hình 
+	thức này gồm:
+		+ add();
+		+ remove();
+		+ element();
+	b. Nếu 1 phương thức xảy ra lỗi (fails) --> 1 giá trị đặc biệt được trả về là
+	 (null hoặc false). Hình thức này gồm:
+	    + offer();
+	    + poll();
+	    + peek();
+-  Cơ chế xử lý của Hàng Đợi là FIFO (first-in-first-out) --> cách phổ biến nhất
+    để đưa các phần tử vào Hàng Đợi.
+    
+>> 1.1. Throws exception <<
++ add(E e): Chèn đối tượng e đến cuối của hàng đợi. Nếu không còn không gian chứa của biến bởi vì
+                      do thiết lập hạn chế không gian <capacity restrictions> thì IllegalStateException sẽ được ném ra.
++ remove(): Sử dụng để loại bỏ & nó sẽ trả về phần tử đầu tiên của hàng đợi<the first element>. Nếu hàng đợi mà rỗng
+                      <empty> thì sẽ NoSuchElementException sẽ được ném ra.
++ element(): Trả về phần tử đầu tiên của hàng đợi, ko bị xóa khỏi hàng đợi. If the queue is empty, again NoSuchElementException
+						is thrown.
+						
+>> 1.2. Returns special value <<
++ offer(E e): Thêm phần tử vào cuối của hàng đợi. Nếu thêm thành công sẽ nhận giá trị true, ngược lại nhận giá trị false.
+						Nếu bị giới hạn thì nó là lựa chọn phù hợp hơn add().
++ poll(): Giống với remove(), nó lấy và loại bỏ phần tử đầu của hàng đợi. Sự khác biết duy nhất giữa remove() và poll()
+				là poll() trả về null khi hàng đợi rỗng <Empty>.
++ peek(): Giống với element() là nhận về phần tử đầu tiên của hàng đợi, mà không loại bỏ nó. Khi hàng đợi rỗng nó 
+				sẽ trả về giá trị null.
+				
+>> 2. Example of Queue <<
+
+	 
