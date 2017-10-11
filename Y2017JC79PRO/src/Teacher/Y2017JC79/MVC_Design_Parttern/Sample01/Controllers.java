@@ -15,6 +15,7 @@ public class Controllers {
 	 * 
 	 * @return
 	 */
+
 	public double Calculators(NumberEntity objCal) {
 
 		double dResult = 0;

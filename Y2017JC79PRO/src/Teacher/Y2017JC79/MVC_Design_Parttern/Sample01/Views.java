@@ -14,7 +14,7 @@ public class Views {
 		 * bOpt = 3: Chia
 		 */
 
-		objEntity.setbOpt((byte) 0);
+		objEntity.setbOpt((byte) 3);
 
 		if (objEntity.getbOpt() < 0 || objEntity.getbOpt() > 3) {
 			System.out.println("- Option cần nằm trong khoảng từ 0 - 3");

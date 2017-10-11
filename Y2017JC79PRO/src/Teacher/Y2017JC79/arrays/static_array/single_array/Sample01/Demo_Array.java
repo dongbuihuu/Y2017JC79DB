@@ -1,10 +1,13 @@
-package Teacher.Y2017JC79.arrays.static_array.SINGLE_ARRAY.Sample01;
+package Teacher.Y2017JC79.arrays.static_array.single_array.Sample01;
 
 public class Demo_Array {
 	public static void main(String[] args) {
 		// 1. Khai báo biến mảng
-		double[] dArr = new double[10];
+		double[] dArr;
+		dArr = new double[10];
+
 		double[] myArr = { 6.5, 7.5, 8.5, 9.5 }; // 4 phần tử
+
 		double[] dArray = new double[] { 1.0, 2.5, 88.9, 8.3 }; // Vừa khai báo vừa khởi tạo
 
 		// 2. Đưa giá trị vào biến mảng

@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.arrays.static_array.Sample03;
+package Teacher.Y2017JC79.arrays.static_array.single_array.Sample03;
 
 public class DichViTriPhanTu {
 	// ban đầu: { 1, 2, 3, 4, 5, 6, 7, 8, 9 } sau là { 2, 3, 4, 5, 6, 7, 8, 9, 1 }

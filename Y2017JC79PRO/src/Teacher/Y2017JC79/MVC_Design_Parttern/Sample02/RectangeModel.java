@@ -11,7 +11,7 @@ public class RectangeModel extends Shape {
 	@Override
 	public double Perrimetter(Object obj) {
 		RectangeEntity objEntity = (RectangeEntity) obj;
-		return 2 * (objEntity.getdHeight() + objEntity.getdWidth());
+		return 3 * (objEntity.getdHeight() + objEntity.getdWidth());
 	}
 
 }

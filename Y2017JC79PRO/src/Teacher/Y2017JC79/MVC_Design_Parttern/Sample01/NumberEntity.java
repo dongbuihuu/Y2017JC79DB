@@ -3,7 +3,7 @@ package Teacher.Y2017JC79.MVC_Design_Parttern.Sample01;
 public class NumberEntity {
 	private double dNumA;
 	private double dNumB;
-	private byte bOpt;
+	private byte bOpt; // cong hay tru hay nhan hay chia
 
 	public double getdNumA() {
 		return dNumA;
@@ -28,4 +28,5 @@ public class NumberEntity {
 	public void setbOpt(byte bOpt) {
 		this.bOpt = bOpt;
 	}
+
 }

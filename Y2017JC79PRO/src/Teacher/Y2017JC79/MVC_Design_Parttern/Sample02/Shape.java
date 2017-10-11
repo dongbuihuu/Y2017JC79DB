@@ -11,7 +11,7 @@ public abstract class Shape {
 		this.isValue = isValue;
 	}
 
-	abstract public double Area(Object obj);
+	public abstract double Area(Object obj);
 
 	public abstract double Perrimetter(Object obj);
 
