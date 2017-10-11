@@ -26,7 +26,7 @@ public class Array_Sum_And_Average {
 		
 		// When myArray pass through below code section, myArray will be arranged follow ascending
 		for (int i = 0; i < myArray.length; i++) {
-			for (int j = 0; j < myArray.length; j++) {
+			for (int j = i + 1; j < myArray.length; j++) {
 				if (myArray[i] > myArray[j]) {
 					
 					int temp;
