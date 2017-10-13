@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ARRAY_AND_COLLECTIONS.CHUABAITAPVN.BAITAPSO06;
+package Teacher.OOP_CONCEPT.ARRAY_AND_COLLECTIONS.CHUABAITAPVN.BAITAPSO06;
 
 public class ArrayEntity {
 	private StudentEntity[] arrStudent;
@@ -6,7 +6,7 @@ public class ArrayEntity {
 	/***
 	 * - bOption = 0: Min Index; bOption = 1: Max Index
 	 */
-	private byte bOption;	
+	private byte bOption;
 
 	public byte getbOption() {
 		return bOption;
@@ -31,5 +31,5 @@ public class ArrayEntity {
 	public void setdValue(double dValue) {
 		this.dValue = dValue;
 	}
-	
+
 }
