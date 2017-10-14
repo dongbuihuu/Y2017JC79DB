@@ -1,8 +1,7 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ABSTRACTIONS.ABS_INTERFACES;
+package Teacher.Y2017JC79.oops.abstractions.abs_interfaces;
 
-public interface IGeometricObject extends IBussinesObjets, 
-									IBussinesControllayer, 
-										IDataAccessLayers {	
+public interface IGeometricObject extends IBussinesObjets, IBussinesControllayer, IDataAccessLayers {
 	double Area();
+
 	double Perrimetter();
 }

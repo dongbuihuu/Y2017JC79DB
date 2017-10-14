@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ABSTRACTIONS.ABS_INTERFACES;
+package Teacher.Y2017JC79.oops.abstractions.abs_interfaces;
 
 public class ABC implements IGeometricObject {
 
@@ -26,5 +26,5 @@ public class ABC implements IGeometricObject {
 	public double Perrimetter() {
 		return 0;
 	}
-	
+
 }

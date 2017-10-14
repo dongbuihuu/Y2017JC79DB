@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.oops.inheritances;
+package Teacher.Y2017JC79.oops.inheritances.demo_inheritance1;
 
 public class LopDongVat {
 
@@ -41,7 +41,5 @@ public class LopDongVat {
 	protected String TiengKeu() {
 		return "";
 	}
-
-	C c = new C();
 
 }

@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.oops.inheritances;
+package Teacher.Y2017JC79.oops.inheritances.demo_inheritance1;
 
 public class LopConMeo extends LopDongVat {
 	public boolean isDuoi;
