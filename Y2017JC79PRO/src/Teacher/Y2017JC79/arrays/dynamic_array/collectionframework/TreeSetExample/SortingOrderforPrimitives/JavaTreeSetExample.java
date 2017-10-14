@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.OOPS_CONCEPTS.ARRAY_AND_COLLECTIONS.DYNAMIC_ARRAYS.COLLECTIONFRAMEWORK.TreeSetExample.SortingOrderforPrimitives;
+package Teacher.Y2017JC79.arrays.dynamic_array.collectionframework.TreeSetExample.SortingOrderforPrimitives;
 
 import java.util.Set;
 import java.util.TreeSet;
