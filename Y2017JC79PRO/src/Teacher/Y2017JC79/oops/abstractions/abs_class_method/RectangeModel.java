@@ -1,17 +1,17 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ABSTRACTIONS.ABS_CLASS_METHOD;
+package Teacher.Y2017JC79.oops.abstractions.abs_class_method;
 
 public class RectangeModel extends Shape {
 
 	@Override
 	public double Area(Object obj) {
 		RectangeEntity objEntity = (RectangeEntity) obj;
-		return objEntity.getdWidth();
+		return objEntity.getdHeight()*objEntity.getdWidth();
 	}
 
 	@Override
 	public double Perrimetter(Object obj) {
 		RectangeEntity objEntity = (RectangeEntity) obj;
-		return objEntity.getdHeight()*objEntity.getdWidth();
+		return (objEntity.getdHeight()+objEntity.getdWidth())*2;
 	}
 
 }

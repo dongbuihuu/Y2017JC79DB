@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.ABSTRACTIONS.ABS_CLASS_METHOD;
+package Teacher.Y2017JC79.oops.abstractions.abs_class_method;
 
 import java.util.Scanner;
 

@@ -6,7 +6,7 @@ class SuperClass {
 class SubClass1 extends SuperClass {
 }
 
-class SubClass2 extends SuperClass {
+class SubClass2 extends SubClass1 {
 }
 
 public class CheckInstanceof {

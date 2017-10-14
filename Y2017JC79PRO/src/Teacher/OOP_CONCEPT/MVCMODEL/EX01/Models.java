@@ -1,21 +1,21 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.MVCMODEL.EX01;
+package Teacher.OOP_CONCEPT.MVCMODEL.EX01;
 
 public class Models {
-	
-	public double Add(NumberEntity objCal){
+
+	public double Add(NumberEntity objCal) {
 		return objCal.getdNumA() + objCal.getdNumB();
 	}
-	
-	public double Sub(NumberEntity objCal){
+
+	public double Sub(NumberEntity objCal) {
 		return objCal.getdNumA() - objCal.getdNumB();
 	}
-	
-	public double Mul(NumberEntity objCal){
+
+	public double Mul(NumberEntity objCal) {
 		return objCal.getdNumA() * objCal.getdNumB();
 	}
-	
-	public double Div(NumberEntity objCal){
+
+	public double Div(NumberEntity objCal) {
 		return objCal.getdNumA() / objCal.getdNumB();
 	}
-	
+
 }
