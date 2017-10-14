@@ -1,8 +1,6 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.MVCMODEL.DESIGN_PATTERN_MVC;
+package Teacher.OOP_CONCEPT.MVCMODEL.DESIGN_PATTERN_MVC;
 
 import java.util.Scanner;
-
-import javax.swing.JOptionPane;
 
 //Bước 04
 public class EmployeeView {

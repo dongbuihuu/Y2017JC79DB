@@ -1,5 +1,7 @@
 package Teacher.Y2017JC79.oops.abstractions.abstract_class_demo01;
 
+import java.util.Date;
+
 /*
  * Desc: Demo the abstract class
  * author: Bui Huu Dong
@@ -7,15 +9,16 @@ package Teacher.Y2017JC79.oops.abstractions.abstract_class_demo01;
  * */
 
 abstract class Geometric {
-	private String color = "white";
-	private java.util.Date dateCreated;
+	private String color;
+	private Date dateCreated;
 
 	protected Geometric() {
-		dateCreated = new java.util.Date();
+		dateCreated = new Date();
+		this.color = "white";
 	}
 
 	protected Geometric(String color) {
-		dateCreated = new java.util.Date();
+		dateCreated = new Date();
 		this.color = color;
 	}
 
@@ -27,11 +30,11 @@ abstract class Geometric {
 		this.color = color;
 	}
 
-	public java.util.Date getDateCreated() {
+	public Date getDateCreated() {
 		return dateCreated;
 	}
 
-	public void setDateCreated(java.util.Date dateCreated) {
+	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
 
