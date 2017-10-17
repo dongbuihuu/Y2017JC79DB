@@ -1,0 +1,10 @@
+Yêu cầu:
+
+Viết một hàm sắp xếp và in ra mảng bằng generic
+	+ Input: E[] arrlist
+	+ output: Array sorted?
+	
+Gợi ý:
+	- Dùng bounded với object kế thừa từ Comparable<E> để sử dụng hàm compareTo() 
+	- Giải thuật:
+		Dùng 2 vòng lặp lồng nhau để hoán đổi min 
