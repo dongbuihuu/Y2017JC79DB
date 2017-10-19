@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.arrays.dynamic_array.collectionframework.TheComparableAndIterable.BeforeCompare;
+package Teacher.Y2017JC79.arrays.dynamic_array.collectionframework.TheComparableAndIterableInterface.BeforeCompare;
 
 import java.util.ArrayList;
 import java.util.Collections;
