@@ -4,6 +4,8 @@ public class GenericDemoMethod {
 
 	public static void main(String[] args) {
 		Integer[] lisInt = { 4, 5, 6, 8, 2, 5, 11, 99 };
+		Character[] lisChar = { 'a', 'b', 'c', 'd' };
+
 		printArray(lisInt);
 
 	}

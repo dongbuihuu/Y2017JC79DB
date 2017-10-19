@@ -55,6 +55,7 @@ public class ShareControllerOfGenerics {
 		drawCircle(objCi, lisShape); // Okie
 		drawCircle(objCi, objCi); // Okie
 		drawCircle(objCi, lisBaseShape); // Okie
+		drawCircle(objCi, objCi);
 
 		drawOctagon(objOc, lisShape); // Okie
 		drawOctagon(objChildOc, lisShape); // Okie

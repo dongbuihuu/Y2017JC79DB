@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.Comparable;
+package Teacher.Y2017JC79.arrays.dynamic_array.collectionframework.TheComparableAndIterableInterface.Comparable;
 
 public class Student implements Comparable<Student> {
 	private String sFullName;

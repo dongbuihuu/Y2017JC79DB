@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.oops.generics.generic_class.sample01;
+package Teacher.Y2017JC79.oops.generics.wildcardgeneric.demo_unbounded;
 
 import java.util.ArrayList;
 import java.util.Iterator;
