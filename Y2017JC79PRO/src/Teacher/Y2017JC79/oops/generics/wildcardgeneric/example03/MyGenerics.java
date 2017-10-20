@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.oops.generics.wildcardgeneric.example01;
+package Teacher.Y2017JC79.oops.generics.wildcardgeneric.example03;
 
 public class MyGenerics<T, E> {
 	public boolean CheckElement(T objT, E objE) {

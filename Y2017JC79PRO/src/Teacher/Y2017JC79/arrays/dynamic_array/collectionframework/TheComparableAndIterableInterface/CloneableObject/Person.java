@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.CloneableObject;
+package Teacher.Y2017JC79.arrays.dynamic_array.collectionframework.TheComparableAndIterableInterface.CloneableObject;
 
 public class Person implements Cloneable {
 	private String sName;
