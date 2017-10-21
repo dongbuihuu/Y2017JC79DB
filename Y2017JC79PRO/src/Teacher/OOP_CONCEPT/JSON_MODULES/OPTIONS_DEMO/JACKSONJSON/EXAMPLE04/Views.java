@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.JSON_MODULES.OPTIONS_DEMO.JACKSONJSON.EXAMPLE04;
+package Teacher.OOP_CONCEPT.JSON_MODULES.OPTIONS_DEMO.JACKSONJSON.EXAMPLE04;
 
 import java.util.List;
 
@@ -12,11 +12,11 @@ public class Views {
 
 		// 3. Khởi tạo CarEntity
 		try {
-			ContentMetadata objResult = objController.GetDataOfJSon(ApiServ);			
-			System.out.println("+ ErrorMessage: "+ objResult.getErrorMessage());
-			System.out.println("+ ReturnCode: "+ objResult.getReturnCode());
-			System.out.println("+ TotalRecord: "+ objResult.getTotalRecord());
-			
+			ContentMetadata objResult = objController.GetDataOfJSon(ApiServ);
+			System.out.println("+ ErrorMessage: " + objResult.getErrorMessage());
+			System.out.println("+ ReturnCode: " + objResult.getReturnCode());
+			System.out.println("+ TotalRecord: " + objResult.getTotalRecord());
+
 			List<DisCountEntity> lisDiscount = objResult.getResults();
 			for (DisCountEntity disCountEntity : lisDiscount) {
 				System.out.println(disCountEntity);
