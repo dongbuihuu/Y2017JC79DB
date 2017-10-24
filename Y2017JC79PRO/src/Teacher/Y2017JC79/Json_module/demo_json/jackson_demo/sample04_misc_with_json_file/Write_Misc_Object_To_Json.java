@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -20,38 +21,63 @@ public class Write_Misc_Object_To_Json {
 	public static void main(String[] args) {
 		// 1. Tạo ra 1 list các Student
 		List<EntityStudent> lisStudent = new ArrayList<>();
+
 		StudentMetaData lstMeta = new StudentMetaData();
 
 		String strFile = null;
+		String sExit = "";
+		Scanner sc = new Scanner(System.in);
 
 		// 2. Khai báo & khởi tạo các đối tượng Sinh viên
-		EntityStudent sv01 = new EntityStudent();
-		EntityStudent sv02 = new EntityStudent();
-		EntityStudent sv03 = new EntityStudent();
-		EntityStudent sv04 = new EntityStudent();
+		do {
+			EntityStudent sv = new EntityStudent();
 
-		// 3. Thiết lập đầy đủ thông tin cho 03 đối tượng SV
-		sv01.setiID(1);
-		sv01.setsFullName("Nguyễn Văn A");
-		sv01.setdMark(9.5);
+			System.out.print("ID:");
+			sv.setiID(sc.nextInt());
+			sc.nextLine();
 
-		sv02.setiID(2);
-		sv02.setsFullName("Trần Thị B");
-		sv02.setdMark(3.5);
+			System.out.print("FullName:");
+			sv.setsFullName(sc.nextLine());
 
-		sv03.setiID(3);
-		sv03.setsFullName("Ma Văn C");
-		sv03.setdMark(8);
+			System.out.print("Mark:");
+			sv.setdMark(sc.nextDouble());
+			sc.nextLine();
 
-		sv04.setiID(4);
-		sv04.setsFullName("Ma Văn Mèo");
-		sv04.setdMark(5.5);
+			lisStudent.add(sv);
 
-		// 4. Đưa các sinh viên vào trong danh sách sinh viên
-		lisStudent.add(sv01);
-		lisStudent.add(sv02);
-		lisStudent.add(sv03);
-		lisStudent.add(sv04);
+			sc = new Scanner(System.in);
+			System.out.println("Bạn có muốn nhập tiếp không (Y/N) ?");
+			sExit = sc.nextLine();
+
+		} while (sExit.toUpperCase().equals("Y"));
+
+		// EntityStudent sv01 = new EntityStudent();
+		// EntityStudent sv02 = new EntityStudent();
+		// EntityStudent sv03 = new EntityStudent();
+		// EntityStudent sv04 = new EntityStudent();
+		//
+		// // 3. Thiết lập đầy đủ thông tin cho 03 đối tượng SV
+		// sv01.setiID(1);
+		// sv01.setsFullName("Nguyễn Văn A");
+		// sv01.setdMark(9.5);
+		//
+		// sv02.setiID(2);
+		// sv02.setsFullName("Trần Thị B");
+		// sv02.setdMark(3.5);
+		//
+		// sv03.setiID(3);
+		// sv03.setsFullName("Ma Văn C");
+		// sv03.setdMark(8);
+		//
+		// sv04.setiID(4);
+		// sv04.setsFullName("Ma Văn Mèo");
+		// sv04.setdMark(5.5);
+		//
+		// // 4. Đưa các sinh viên vào trong danh sách sinh viên
+		// lisStudent.add(sv01);
+		// lisStudent.add(sv02);
+		// lisStudent.add(sv03);
+		// lisStudent.add(sv04);
 
 		// 5. Đưa vào metadata
 		lstMeta.setiReturnCode(0);

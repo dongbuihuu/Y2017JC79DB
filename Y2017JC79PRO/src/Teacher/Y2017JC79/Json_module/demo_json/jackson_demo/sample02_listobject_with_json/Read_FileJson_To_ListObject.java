@@ -22,19 +22,25 @@ public class Read_FileJson_To_ListObject {
 			strFile = file.getAbsolutePath();
 
 			ObjectMapper objMapper = new ObjectMapper();
+
 			try {
 
 				List<EntityStudent> lisStudent = objMapper.readValue(new File(strFile),
 						new TypeReference<List<EntityStudent>>() {
 						});
-				for (EntityStudent objS : lisStudent) {
-					System.out.println("+ RollNo: " + objS.getiID());
-					System.out.println("+ FullName: " + objS.getsFullName());
-					System.out.println("+ Mark: " + objS.getdMark());
+
+				for (EntityStudent entityStudent : lisStudent) {
+					System.out.println(entityStudent);
 				}
+				//
+				// for (EntityStudent objS : lisStudent) {
+				// System.out.println("+ RollNo: " + objS.getiID());
+				// System.out.println("+ FullName: " + objS.getsFullName());
+				// System.out.println("+ Mark: " + objS.getdMark());
+				// }
 
 			} catch (JsonGenerationException e) {
-				// TODO Auto-generated catch block
+
 				e.printStackTrace();
 			} catch (JsonMappingException e) {
 				// TODO Auto-generated catch block

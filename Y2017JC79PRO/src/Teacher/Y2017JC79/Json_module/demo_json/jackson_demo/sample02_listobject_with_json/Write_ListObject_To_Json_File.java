@@ -44,10 +44,13 @@ public class Write_ListObject_To_Json_File {
 		lisStudent.add(sv03);
 
 		// 5. Gọi mở cửa sổ chọn file và thực hiện ghi xuống file
-		if (FilePath.SaveFile() != null) {
-			strFile = FilePath.SaveFile().getAbsolutePath();
+		File file = FilePath.SaveFile();
+
+		if (file != null) {
+			strFile = file.getAbsolutePath();
 
 			ObjectMapper objMapper = new ObjectMapper();
+
 			try {
 				objMapper.writeValue(new File(strFile), lisStudent);
 				JOptionPane.showMessageDialog(null, "Lưu file json thành công");
