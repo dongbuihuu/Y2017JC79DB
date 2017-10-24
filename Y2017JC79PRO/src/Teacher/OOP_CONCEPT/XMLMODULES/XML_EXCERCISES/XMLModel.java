@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.XMLMODULES.XML_EXCERCISES;
+package Teacher.OOP_CONCEPT.XMLMODULES.XML_EXCERCISES;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -35,8 +35,7 @@ public class XMLModel {
 	 *            sPathFile
 	 * @throws Exception
 	 */
-	public List<List<HashMap<String, String>>> ReadElements
-					(XMLParams objXMLParam) throws Exception {
+	public List<List<HashMap<String, String>>> ReadElements(XMLParams objXMLParam) throws Exception {
 		// Khai báo & khởi tạo các đối tượng
 		List<List<HashMap<String, String>>> lisHash = new ArrayList<List<HashMap<String, String>>>();
 		List<HashMap<String, String>> lisTemp = new ArrayList<HashMap<String, String>>();
@@ -65,8 +64,7 @@ public class XMLModel {
 
 				// 5. Lấy ra các field từ List<T>
 				/*
-				 * objF[0] = "Id" objF[1] = "iRollNo" objF[2] = "sFullName"
-				 * objF[3] = "dMark"
+				 * objF[0] = "Id" objF[1] = "iRollNo" objF[2] = "sFullName" objF[3] = "dMark"
 				 */
 				Field[] objF = objXMLParam.lisField.get(0).getClass().getDeclaredFields();
 				List<String> lis = new ArrayList<String>();
@@ -90,8 +88,7 @@ public class XMLModel {
 							} else {
 								// Node items in Element Node
 								key = "" + lis.get(k);
-								value = "" + 
-								     eElement.getElementsByTagName("" + lis.get(k)).item(0).getTextContent();
+								value = "" + eElement.getElementsByTagName("" + lis.get(k)).item(0).getTextContent();
 								objHash.put(key, value);
 							}
 						}
@@ -110,7 +107,7 @@ public class XMLModel {
 		}
 		return lisHash;
 	}
-	
+
 	/**
 	 * Nghiệp vụ xử lý ghi dữ liệu xuống XML files
 	 * 

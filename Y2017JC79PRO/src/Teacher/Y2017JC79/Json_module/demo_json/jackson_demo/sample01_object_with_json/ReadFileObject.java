@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.sample02;
+package Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.sample01_object_with_json;
 
 import java.io.File;
 
@@ -7,7 +7,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
-import Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.Sample01.Student;
+import Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.common.EntityStudent;
 
 public class ReadFileObject {
 	public static void main(String[] args) {
@@ -34,13 +34,13 @@ public class ReadFileObject {
 			String strFile = filePath.getAbsolutePath(); // Duong dan toi cho ma ta muon luu
 			try {
 				// objMapper.writeValue(new File(strFile), objStudent);
-				Student objStudent = objMapper.readValue(new File(strFile), Student.class);
+				EntityStudent objStudent = objMapper.readValue(new File(strFile), EntityStudent.class);
 
 				// JOptionPane.showMessageDialog(null, "Đã đọc thành công !!");
 				// Diplay information the student to interface of end user
-				System.out.println("Mã sinh viên là: " + objStudent.getRollNo());
-				System.out.println("Tên sinh viên là: " + objStudent.getFullName());
-				System.out.println("Điểm sinh viên là: " + objStudent.getMark());
+				System.out.println("Mã sinh viên là: " + objStudent.getiID());
+				System.out.println("Tên sinh viên là: " + objStudent.getsFullName());
+				System.out.println("Điểm sinh viên là: " + objStudent.getdMark());
 
 			} catch (Exception e) {
 				e.printStackTrace();

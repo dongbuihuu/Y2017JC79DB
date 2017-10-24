@@ -1,0 +1,16 @@
+* Nội dung: Viết 1 chương trình cho phép người dùng thực hiện được
+  Các tính năng nghiệp vụ sau:
+        1. Cho phép người dùng có thể nhập vào các đối tượng Sinh viên ko 
+        giới hạn? 
+              --> Id: int
+              --> RollNo: String
+              --> FullName: String
+              --> Mark: double
+        2. Cho phép tạo ra file Student.xml từ dữ liệu nhập người dùng 
+        nhập vào?
+        3. Khi người dùng muốn xem dữ liệu có trong file *.xml thì phải thật
+         dễ dàng mở được ngay. Trình diễn dữ liệu cho người dùng xem được
+         nó?
+        4. Cho phép thêm nhiều sinh viên nữa và lưu tiếp vào file đó.
+        5. Cho phép cập nhật thông tin của 1 sinh viên bất kỳ trong file đó.
+        6. Cho phép xóa đi 1 đối tượng sinh viên nào đó trong file *.xml đó.

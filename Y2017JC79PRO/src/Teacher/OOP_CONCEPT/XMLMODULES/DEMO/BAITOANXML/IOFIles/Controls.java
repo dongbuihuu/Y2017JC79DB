@@ -1,9 +1,6 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.XMLMODULES.DEMO.BAITOANXML.IOFIles;
+package Teacher.OOP_CONCEPT.XMLMODULES.DEMO.BAITOANXML.IOFIles;
 
 import java.lang.reflect.Field;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -13,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 import com.google.gson.Gson;
 
 public class Controls<T> {
-	
+
 	private List<String> getFieldOf(List<T> lisField) {
 		Field[] objF = lisField.get(0).getClass().getDeclaredFields();
 		List<String> lisResult = new ArrayList<String>();
@@ -23,8 +20,7 @@ public class Controls<T> {
 		return lisResult;
 	}
 
-	public DefaultTableModel getDataModels(List<T> lisT) 
-						throws Exception {
+	public DefaultTableModel getDataModels(List<T> lisT) throws Exception {
 		// 1. Khởi tạo đối tượng DefaultTableModel chứa thông tin Hàng và Cột
 		DefaultTableModel objDTM = new DefaultTableModel();
 		Vector<String> col_name = new Vector<String>();

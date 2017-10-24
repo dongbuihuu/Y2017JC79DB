@@ -1,13 +1,12 @@
-package JAVACORE_TRAINING.TEACHER.OOP_CONCEPT.XMLMODULES.BUOIHOC19;
+package Teacher.OOP_CONCEPT.XMLMODULES.BUOIHOC19;
 
 import java.io.File;
-import java.io.ObjectInputStream.GetField;
-import java.net.URL;
 
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -56,14 +55,9 @@ public class ReadXMLFile {
 						Element eElement = (Element) nNode;
 						System.out.println("Id : " + eElement.getAttribute("Id"));
 						System.out.println(
-								"TeacherId: " + 
-								eElement.getElementsByTagName("TeacherId").
-								item(0).getTextContent());
+								"TeacherId: " + eElement.getElementsByTagName("TeacherId").item(0).getTextContent());
 						// lis.get(k)).item(0).getTextContent()
-						System.out.println(
-								"Name: " + 
-								eElement.getElementsByTagName("Name").
-								item(0).getTextContent());					
+						System.out.println("Name: " + eElement.getElementsByTagName("Name").item(0).getTextContent());
 					}
 				}
 			}
@@ -71,5 +65,5 @@ public class ReadXMLFile {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

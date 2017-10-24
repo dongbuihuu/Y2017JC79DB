@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.Sample01;
+package Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.sample01_object_with_json;
 
 import java.io.File;
 
@@ -8,7 +8,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
-public class MainApp {
+import Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.common.EntityStudent;
+
+public class Main_Object_To_Json {
 	public static void main(String[] args) {
 
 		// 0. Khai bao bien khoi tao doi tuong cua ObjectMaper cua Jackson json
@@ -29,10 +31,10 @@ public class MainApp {
 		// Goi hop thoai len (bang giao dien)
 		int result = fileChooser.showSaveDialog(null);
 		// 2. Tao doi tuong can luu
-		Student objStudent = new Student();
-		objStudent.setRollNo(100);
-		objStudent.setFullName("Nguyễn văn A");
-		objStudent.setMark(8.5);
+		EntityStudent objStudent = new EntityStudent();
+		objStudent.setiID(100);
+		objStudent.setsFullName("Nguyễn văn A");
+		objStudent.setdMark(8.5);
 
 		if (result == JFileChooser.APPROVE_OPTION) {
 			File filePath = fileChooser.getSelectedFile();
