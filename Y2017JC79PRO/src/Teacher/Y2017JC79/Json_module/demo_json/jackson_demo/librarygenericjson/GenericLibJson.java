@@ -7,35 +7,34 @@ import java.util.List;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 
-public class LibraryJson<E> {
+public class GenericLibJson<E> {
 
-	// 1. Write from objects to json file
-	public boolean writeJsonFile(File file, E objValue) throws Exception {
+	public boolean writeFileJson(File file, E objE) throws Exception {
+		boolean result = false;
 
-		boolean result = true;
 		ObjectMapper objMapper = new ObjectMapper();
-
 		try {
-			objMapper.writeValue(file, objValue);
-
+			objMapper.writeValue(file, objE);
+			result = true;
 		} catch (Exception e) {
-			result = false;
+			System.out.println(e.getMessage());
 		}
-		return result;
 
+		return result;
 	}
 
-	// 2. Read data from file *.json
+	// 2. Read data from the json file.
 
-	public E readJsonFile(File file, E objData, byte option) throws Exception {
+	@SuppressWarnings("unchecked")
+	public E readFileJson(File file, E objE, byte bOpt) throws Exception {
 		ObjectMapper objMapper = new ObjectMapper();
 		E result = null;
-		List<E> lstData = null;
-
+		List<E> lstData = null; // Trong truong hop doc mot object
 		try {
-			if (option == 0) {
+			// Quy dinh doc mot object
+			if (bOpt == 0) {
 				lstData = new ArrayList<E>();
-				lstData.add(objData);
+				lstData.add(objE);
 				result = (E) objMapper.readValue(file, lstData.get(0).getClass());
 			} else {
 				result = objMapper.readValue(file, new TypeReference<E>() {
@@ -44,7 +43,7 @@ public class LibraryJson<E> {
 			}
 
 		} catch (Exception e) {
-			throw e;
+
 		}
 
 		return result;
