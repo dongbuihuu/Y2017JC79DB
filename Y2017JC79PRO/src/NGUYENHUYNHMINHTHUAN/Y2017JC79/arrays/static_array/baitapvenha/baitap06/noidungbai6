@@ -1,0 +1,4 @@
+BÀI TẬP 06: (Sorting students) 
+	Viết 1 chương trình yêu cầu người dùng nhập vào số sinh viên (Students), 
+	tên sinh viên và điểm của sinh viên. 
+	Sau đó in thông tin sinh viên được sắp xếp giảm dần theo điểm.

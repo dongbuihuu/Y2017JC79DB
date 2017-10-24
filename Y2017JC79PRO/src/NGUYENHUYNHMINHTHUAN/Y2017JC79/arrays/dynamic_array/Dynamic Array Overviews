@@ -1,0 +1,14 @@
+Dynamic Array Overviews
+---------------------------------
+ + Là mảng có cơ chế tự động resize kích thước.
+ + Ko phải khai báo kích thước mảng.
+ + List, ArrayList, HashMap, HashAble, Vector,...
+ + Mảng động FW Java đã định nghĩa sẵn tất cả những phương thức, thuộc tính để có
+ thể dễ dàng sử dụng trong việc xử lý tính toán số liệu trong mảng.
+
+a. List vs ArrayList?
+ --> List: Interface - Mảng động
+ --> ArrayList: Class - Mảng động
+ 
+ 
+ 

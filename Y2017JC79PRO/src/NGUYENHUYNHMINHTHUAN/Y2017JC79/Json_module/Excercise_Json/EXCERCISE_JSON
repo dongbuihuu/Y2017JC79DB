@@ -1,0 +1,14 @@
+* BÀI TOÁN: Viết 1 chương trình Quản lý Sinh Viên với các thông tin sau:
+          - Mã sinh viên
+          - Họ và tên
+          - Email
+          - Điện thoại
+          - Điểm số
+
+       * Ứng dụng cho phép thực hiện các tính năng như:
+          a. Thêm n sinh viên vào danh sách <ko giới hạn>.
+          b. Lưu toàn bộ thông tin Sinh viên vào file có thể là: *.json.
+          c. Thêm n sinh viên tiếp theo vào danh sách trong file *.json đã có sẵn.
+          d. Xóa đi n sinh viên trong danh sách và cập nhật vào csdl file *.json.
+          e. Cập nhật thông tin của 1 Sinh viên bất kỳ rồi cập nhật lại csdl dạng file với 
+              *.json.

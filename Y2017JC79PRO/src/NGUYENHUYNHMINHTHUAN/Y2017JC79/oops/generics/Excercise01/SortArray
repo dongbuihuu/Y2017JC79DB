@@ -1,0 +1,17 @@
+Yêu cầu:
+
+Viết một hàm sắp xếp và in ra mảng bằng generic
+	+ Input: E[] arrlist
+	+ output: Array sorted?
+	+ Không dùng Iterator/không được (Collections.sort) để lắp mà dùng for lồng nhau
+	
+Gợi ý:
+	- Dùng bounded với object kế thừa từ Comparable<E> để sử dụng hàm compareTo() 
+	- Giải thuật:
+		Dùng 2 vòng lặp lồng nhau để hoán đổi min 
+		
+		
+		[1 225 22 555 33 5557]
+		[1 22 33 255 555 5557]
+		
+		
