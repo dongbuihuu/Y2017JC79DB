@@ -23,6 +23,8 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import Teacher.Y2017JC79.XML_module.XML_Demo.CommonXML.Student;
+
 public class XMLModel {
 	/***
 	 * Nghiệp vụ đọc dữ liệu trong files XML có sẵn Cần các tham số:
@@ -108,9 +110,9 @@ public class XMLModel {
 		return lisHash;
 	}
 
-	public List<SinhVienEntity> DocDuLieuXML(String FileName) {
+	public List<Student> DocDuLieuXML(String FileName) {
 		// Khai báo & khởi tạo các đối tượng
-		List<SinhVienEntity> lisStudent = new ArrayList<SinhVienEntity>();
+		List<Student> lisStudent = new ArrayList<Student>();
 
 		try {
 			// 1. Khởi tạo đối tượng files (tham chiếu tới files)
@@ -135,12 +137,12 @@ public class XMLModel {
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						Element eElement = (Element) nNode;
 
-						SinhVienEntity objStudent = new SinhVienEntity();
-						objStudent.setId(Integer.parseInt("" + eElement.getAttribute("Id")));
-						objStudent.setiRollNo("" + eElement.getElementsByTagName("RollNo").item(0).getTextContent());
-						objStudent
-								.setsFullName("" + eElement.getElementsByTagName("FullName").item(0).getTextContent());
-						objStudent.setdMark(Double
+						Student objStudent = new Student();
+						// objStudent.setID(Integer.parseInt("" + eElement.getAttribute("Id")));
+						objStudent.setID(
+								Integer.parseInt("" + eElement.getElementsByTagName("ID").item(0).getTextContent()));
+						objStudent.setFullName("" + eElement.getElementsByTagName("FullName").item(0).getTextContent());
+						objStudent.setMark(Double
 								.parseDouble("" + eElement.getElementsByTagName("Mark").item(0).getTextContent()));
 						lisStudent.add(objStudent);
 					}

@@ -1,5 +1,6 @@
-package Teacher.OOP_CONCEPT.XMLMODULES.DEMO;
+package Teacher.Y2017JC79.XML_module.XML_Demo.Demo_XML_NoLib.Demo_CreateXMLFile_NoLib;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,7 +56,6 @@ public class CreateXMLFile {
 		lisStudent.add(objS03);
 		lisStudent.add(objS04);
 
-		// --> Sử dụng công nghệ cao? <Ctrl + C & Ctrl + V>
 		JFileChooser objFile = new JFileChooser();
 		objFile.setCurrentDirectory(new java.io.File("."));
 		objFile.setDialogTitle("Chọn file: ");
@@ -70,6 +70,7 @@ public class CreateXMLFile {
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			FileName = objFile.getSelectedFile().getPath();
 		}
+
 		StudentMetaData objMta = new StudentMetaData();
 		objMta.setmLisStudent(lisStudent);
 		objMta.setsFileName(FileName);
@@ -122,8 +123,11 @@ public class CreateXMLFile {
 			Transformer transformer = transformerFactory.newTransformer();
 			DOMSource source = new DOMSource(doc);
 
-			StreamResult result = new StreamResult(objMetadata.getsFileName());
+			// StreamResult result = new StreamResult(objMetadata.getsFileName());
+
+			StreamResult result = new StreamResult(new File(objMetadata.getsFileName()));
 			transformer.transform(source, result);
+
 			// System.out.println("File saved!");
 
 		} catch (ParserConfigurationException pce) {

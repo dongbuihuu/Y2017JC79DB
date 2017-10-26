@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.XML_module.XML_Demo;
+package Teacher.Y2017JC79.XML_module.XML_Demo.Demo_XML_NoLib.Demo_ReadXMLFile_NoLib;
 
 import java.io.File;
 
@@ -33,8 +33,12 @@ public class ReadXMLFile {
 				Document doc = dBuilder.parse(fXmlFile);
 
 				doc.getDocumentElement().normalize();
+
+				// 1. hiển thị tên root node
 				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+
 				NodeList nList = doc.getElementsByTagName("Student");
+
 				System.out.println("----------------------------");
 				int i = nList.getLength();
 				System.out.println(i);
@@ -45,11 +49,13 @@ public class ReadXMLFile {
 
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						Element eElement = (Element) nNode;
-						System.out.println("RollNo : " + eElement.getAttribute("ID"));
+						System.out.println("ID : " + eElement.getAttribute("id"));
+						System.out.println("ID : " + eElement.getElementsByTagName("ID").item(0).getTextContent());
+
 						System.out.println(
-								"First Name : " + eElement.getElementsByTagName("FullName").item(0).getTextContent());
-						System.out.println(
-								"Last Name : " + eElement.getElementsByTagName("Mark").item(0).getTextContent());
+								"FullName : " + eElement.getElementsByTagName("FullName").item(0).getTextContent());
+
+						System.out.println("Mark : " + eElement.getElementsByTagName("Mark").item(0).getTextContent());
 					}
 				}
 
