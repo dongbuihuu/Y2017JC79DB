@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students> 
+	<Student id="1">
+		<ID>01</ID>
+		<FullName>Nguyễn Văn Thành</FullName>
+		<Mark>8.9</Mark>
+	</Student>
+	<Student id="2">
+		<ID>02</ID>
+		<FullName>Nguyễn Văn Bé</FullName>
+		<Mark>4.9</Mark>
+	</Student>
+	<Student id ="3">
+		<ID>03</ID>
+		<FullName>Nguyễn Văn Tèo</FullName>
+		<Mark>3.9</Mark>
+	</Student>
+	<Student id="4">
+		<ID>0014</ID>
+		<FullName>Trình Văn A</FullName>
+		<Mark>9</Mark>
+	</Student>
+</Students>

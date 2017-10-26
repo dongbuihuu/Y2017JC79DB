@@ -7,7 +7,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public final class FilePath {
 
-	public static JFileChooser newInstanceJFile() {
+	private static JFileChooser newInstanceJFile() {
 		// 1. Khởi tạo lớp Chooser
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Chọn file");
@@ -36,7 +36,7 @@ public final class FilePath {
 
 	}
 
-	public static File SaveFile() {
+	public static File saveFile() {
 		JFileChooser fileChooser = newInstanceJFile();
 
 		int resultOpenFile = fileChooser.showSaveDialog(null);

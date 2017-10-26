@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.UsingSynchronisedBlock;
+package Teacher.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.UsingSynchronisedBlock;
 
 class First {
 	public void display(String msg) {
@@ -10,7 +10,7 @@ class First {
 		}
 		System.out.println("]");
 	}
-	
+
 	public void HienThi(String msg) {
 		System.out.print("{" + msg);
 		try {
@@ -32,7 +32,7 @@ class Second extends Thread {
 		start();
 	}
 
-	public void run() {		
+	public void run() {
 		synchronized (fobj) // Synchronized block
 		{
 			fobj.display(msg);

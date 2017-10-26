@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lectures> <!-- Root Node -->  
+	<Lecture> <!-- Element -->
+		<ID>01</ID>
+		<FullName>Nguyễn Văn A</FullName>
+	</Lecture>
+		<Lecture> <!-- Element -->
+		<ID>02</ID>
+		<FullName>Nguyễn Văn B</FullName>
+	</Lecture>
+		<Lecture> <!-- Element -->
+		<ID>03</ID>
+		<FullName>Nguyễn Văn C</FullName>
+	</Lecture>
+</Lectures>

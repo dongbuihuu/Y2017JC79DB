@@ -11,25 +11,26 @@ public class HASHMAP_DEMO {
 		// HashMap<Integer, Student>;
 		// HashMap<Integer,List<Students>>;
 		HashMap<Integer, String> objHash = new HashMap<Integer, String>();
-		objHash.put(100, "Nguyễn Văn A");
-		objHash.put(1, "Hoàng Văn B");
-		objHash.put(2, "Trần Thị C");
+
+		objHash.put(1, "Nguyễn Văn A");
+		objHash.put(2, "Hoàng Văn B");
+		objHash.put(3, "Trần Thị C");
 
 		// 2. Kiểm tra Key
-		if (objHash.containsKey(100)) {
+		if (objHash.containsKey(2)) {
 			System.out.println("Có tồn tại Key này!");
 		}
 
 		// 3. Hiển thị giá trị theo Key
-		System.out.println("Key(0): " + objHash.get(100));
 		System.out.println("Key(1): " + objHash.get(1));
-		System.out.println("Key(2): " + objHash.get(2)); // Trần Thị C
+		System.out.println("Key(2): " + objHash.get(2));
+		System.out.println("Key(3): " + objHash.get(3)); // Trần Thị C
 
 		// 4. Xóa từng phần tử trong HashMap
-		objHash.remove(100);
+		objHash.remove(1);
 
 		// 5. Kiểm tra lại
-		if (!objHash.containsKey(100)) {
+		if (!objHash.containsKey(1)) {
 			System.out.println("Không còn tồn tại Key này!");
 		}
 

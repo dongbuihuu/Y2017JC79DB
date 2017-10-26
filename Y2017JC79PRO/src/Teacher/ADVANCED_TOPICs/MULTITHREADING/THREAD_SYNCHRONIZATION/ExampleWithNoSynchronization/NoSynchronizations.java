@@ -1,7 +1,7 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.ExampleWithNoSynchronization;
+package Teacher.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.ExampleWithNoSynchronization;
 
 class First {
-	
+
 	public void display(String msg) {
 		System.out.print("[" + msg);
 		try {
@@ -30,10 +30,8 @@ class Second extends Thread {
 
 public class NoSynchronizations {
 	/*
-	 * [Welcome]
-	 * [New]
-	 * [Programmer]
-	 * */
+	 * [Welcome] [New] [Programmer]
+	 */
 	public static void main(String[] args) {
 		First fnew = new First();
 		Second ss = new Second(fnew, "Welcome");

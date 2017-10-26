@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.UsedSynchronization;
+package Teacher.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.UsedSynchronization;
 
 class First {
 	public synchronized void display(String msg) {

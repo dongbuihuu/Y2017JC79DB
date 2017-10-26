@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.ADVANCED_TOPICS.MULTITHREADING.THREAD_SYNCHRONIZATION.Java_Synchronized_Method;
+package Teacher.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.Java_Synchronized_Method;
 
 public class SynchronizedMethod extends Object {
 	private String objID;
@@ -13,7 +13,8 @@ public class SynchronizedMethod extends Object {
 		print("Local variable num=" + num);
 		try {
 			Thread.sleep(6000);
-		} catch (InterruptedException x) {}
+		} catch (InterruptedException x) {
+		}
 		print("Leaving do Stuff()");
 		System.out.println();
 	}
@@ -37,10 +38,11 @@ public class SynchronizedMethod extends Object {
 		};
 		Thread threadA = new Thread(runA, "Thread A");
 		threadA.start();
-		
+
 		try {
 			Thread.sleep(200);
-		} catch (InterruptedException x) {}
+		} catch (InterruptedException x) {
+		}
 
 		Runnable runB = new Runnable() {
 			public void run() {

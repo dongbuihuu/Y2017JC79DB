@@ -1,4 +1,4 @@
-package Teacher.ADVANCED_TOPICs.MULTITHREADING.SAMPLE02;
+package BUIHUUDONG.multithreading.Sample02;
 
 public class ThreadJoinSample {
 	public static void main(String[] str) {

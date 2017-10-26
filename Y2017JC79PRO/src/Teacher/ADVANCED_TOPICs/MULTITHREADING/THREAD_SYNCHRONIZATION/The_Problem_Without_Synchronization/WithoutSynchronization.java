@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.ADVANCED_TOPICS.MULTITHREADING.THREAD_SYNCHRONIZATION.The_Problem_Without_Synchronization;
+package Teacher.ADVANCED_TOPICs.MULTITHREADING.THREAD_SYNCHRONIZATION.The_Problem_Without_Synchronization;
 
 public class WithoutSynchronization extends Object {
 	private String objID;
@@ -13,7 +13,8 @@ public class WithoutSynchronization extends Object {
 		print("Local variable num=" + num);
 		try {
 			Thread.sleep(6000);
-		} catch (InterruptedException x) {}
+		} catch (InterruptedException x) {
+		}
 		print("Leaving do Stuff()");
 	}
 
@@ -36,10 +37,11 @@ public class WithoutSynchronization extends Object {
 		};
 		Thread threadA = new Thread(runA, "Thread A");
 		threadA.start();
-		
+
 		try {
 			Thread.sleep(200);
-		} catch (InterruptedException x) {}
+		} catch (InterruptedException x) {
+		}
 
 		Runnable runB = new Runnable() {
 			public void run() {
