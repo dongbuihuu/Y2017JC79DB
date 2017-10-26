@@ -1,9 +1,9 @@
-package BUIHUUDONG.multithreading.Thread_Synchronization.TheProblemWithSyn;
+package BUIHUUDONG.multithreading.Thread_Synchronization.TheProblemSynWithLock;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class MainSynchronization {
+public class MainSynchronizationLock {
 	private static Account account = new Account();
 
 	public static void main(String[] args) {
@@ -22,10 +22,6 @@ public class MainSynchronization {
 
 		@Override
 		public void run() {
-			// synchronized (account) { // Block synchronized
-			// account.deposit(1);
-			// }
-
 			account.deposit(1);
 		}
 
