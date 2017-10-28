@@ -5,7 +5,7 @@ public class Student {
 	private int iID;
 	private String sEmail;
 	private int iPhoneNumber;
-	private int iMark;
+	private double iMark;
 
 	public String getsName() {
 		return sName;
@@ -39,12 +39,12 @@ public class Student {
 		this.iPhoneNumber = iPhoneNumber;
 	}
 
-	public int getiMark() {
+	public double getiMark() {
 		return iMark;
 	}
 
-	public void setiMark(int iMark) {
-		this.iMark = iMark;
+	public void setiMark(double d) {
+		this.iMark = d;
 	}
 
 	@Override
