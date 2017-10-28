@@ -1,0 +1,4 @@
+- Viết các phương thức nạp chồng tính điểm trung bình dựa vào tham số mảng
+  + public static int average(int[] array);
+  + public static double average(double[] array);
+- Sử dụng {1, 2, 3, 4, 5, 6} và {6.0, 4.4, 1.9, 2.9, 3.4, 3.5} để test thử phương thức trên.

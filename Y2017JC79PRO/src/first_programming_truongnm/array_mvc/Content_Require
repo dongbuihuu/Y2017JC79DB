@@ -1,0 +1,5 @@
+- Viết một chương trình đọc vào các giá trị điểm 
+
+- Xác định có bao nhiêu điểm trên hoặc bằng mức trung bình và bao nhiêu điểm dưới mức trung bình. 
+ 
+- Nhập vào một giá trị âm để kết thúc việc nhập dữ liệu điểm. Giả sử rằng số lượng điểm tối đa có thể nhập là 100.

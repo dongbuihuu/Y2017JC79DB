@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+	<Student id="1">
+		<ID>01</ID>
+		<FullName> Nguyen Van A</FullName>
+		<Mark>8.9</Mark>
+	</Student>
+
+	<Student id="2">
+		<ID>02</ID>
+		<FullName> Nguyen Van B</FullName>
+		<Mark>6</Mark>
+	</Student>
+
+	<Student id="3">
+		<ID>03</ID>
+		<FullName> Nguyen Van C</FullName>
+		<Mark>7</Mark>
+	</Student>
+
+	<Student id="4">
+		<ID>04</ID>
+		<FullName> Nguyen Van D</FullName>
+		<Mark>8</Mark>
+	</Student>
+
+	<Student id="5">
+		<ID>04</ID>
+		<FullName>Nguyen Van E</FullName>
+		<Mark>9</Mark>
+	</Student>
+
+</Students>

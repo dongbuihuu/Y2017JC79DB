@@ -1,4 +1,4 @@
-package BUIHUUDONG.multithreading.Sample01;
+package Teacher.Y2017JC79.multithreading.Sample01;
 
 public class MultiThread_Implements_Runable {
 	public static void main(String[] args) {
