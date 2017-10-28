@@ -28,6 +28,8 @@ public class ReadFileObject {
 		String[] extensions = new String[] { "json", "XML" };
 		FileNameExtensionFilter filters = new FileNameExtensionFilter("DataBase files", extensions);
 		fileChooser.setFileFilter(filters);
+		// fileChooser.setFileFilter(new FileNameExtensionFilter("DataBase", "json",
+		// "XML"));
 
 		// GOi hop thoai bang giao dien
 
