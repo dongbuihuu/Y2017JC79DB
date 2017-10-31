@@ -7,6 +7,7 @@ public class GenericDemoMethod {
 		Character[] lisChar = { 'a', 'b', 'c', 'd' };
 
 		printArray(lisInt);
+		printArray(lisChar);
 
 	}
 

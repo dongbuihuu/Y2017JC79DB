@@ -16,8 +16,8 @@ public class MainApp {
 		listString.pushStack("Tran Thi E");
 		listString.pushStack("Tran Thi F");
 
-		Integer iValue = 5; // int => Autoboxing
-		int intValue = new Integer(123);/// Auto Unboxing
+		// Integer iValue = 5; // int => Autoboxing
+		// int intValue = new Integer(123);/// Auto Unboxing
 
 		Iterator<String> iter = listString.iteratorStack();
 		while (iter.hasNext()) {
