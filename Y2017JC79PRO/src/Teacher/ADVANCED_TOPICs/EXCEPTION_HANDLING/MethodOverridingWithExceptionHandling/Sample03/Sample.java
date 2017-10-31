@@ -1,11 +1,12 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.EXCEPTION_HANDLING.MethodOverridingWithExceptionHandling.Sample03;
+package Teacher.ADVANCED_TOPICs.EXCEPTION_HANDLING.MethodOverridingWithExceptionHandling.Sample03;
 
 public class Sample {
 	public static void main(String[] args) {
 		try {
 			Super s = new Sub();
 			s.show();
-		} catch (Exception e) { }
+		} catch (Exception e) {
+		}
 	}
 }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-10-31T17:58:03</date>
+  <millis>1509447483910</millis>
+  <sequence>0</sequence>
+  <logger>LoggerMessage</logger>
+  <level>WARNING</level>
+  <class>BUIHUUDONG.ExceptionHandling.Logger.LoggerMessage</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>main</message>
+</record>
+</log>

@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.ADVANCED_TOPICs.SWING_APPs.JTABLEDEMO;
+package Teacher.ADVANCED_TOPICs.SWING_APPs.JTABLEDEMO;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -7,16 +7,14 @@ import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 
 public class Models<T> {
-	
-	public DefaultTableModel 
-				ConvertListTtoDTM(List<T> lisT) 
-											throws Exception {
+
+	public DefaultTableModel ConvertListTtoDTM(List<T> lisT) throws Exception {
 		// 1. Khởi tạo đối tượng DefaultTableModel chứa thông tin Hàng và Cột
 		DefaultTableModel objDTM = new DefaultTableModel();
 		Vector<String> col_name = new Vector<String>();
 		Vector<String> row = null;
 
-		// 2. Khởi tạo thông tin column		
+		// 2. Khởi tạo thông tin column
 		Field[] objF = lisT.get(0).getClass().getDeclaredFields();
 		for (int i = 0; i < objF.length; i++) {
 			col_name.addElement(objF[i].getName());

@@ -1,10 +1,9 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.EXCEPTION_HANDLING.ThrowsKeyword;
+package Teacher.ADVANCED_TOPICs.EXCEPTION_HANDLING.ThrowsKeyword;
 
-public class Controllers {	
-	public boolean Calculator() throws ArithmeticException, 
-													ArrayIndexOutOfBoundsException {		
-			int arr[] = { 1, 2 };
-			arr[2] = 3 / 0;		
+public class Controllers {
+	public boolean Calculator() throws ArithmeticException, ArrayIndexOutOfBoundsException {
+		int arr[] = { 1, 2 };
+		arr[2] = 3 / 0;
 		return true;
 	}
 }

@@ -1,12 +1,10 @@
-package JAVACORE_TRAINING.ADVANCED_TOPICS.SWING_APPs;
+package Teacher.ADVANCED_TOPICs.SWING_APPs;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.GridLayout;
 
 public class frmDemo extends JFrame {
 

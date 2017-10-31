@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.EXCEPTION_HANDLING;
+package Teacher.ADVANCED_TOPICs.EXCEPTION_HANDLING;
 
 public class UsingTryAndCatch {
 
@@ -10,7 +10,7 @@ public class UsingTryAndCatch {
 			c = b / a;
 			System.out.println("This line will not be executed");
 		} catch (ArithmeticException e) {
-			System.out.println("Divided by zero"+ e.getMessage());
+			System.out.println("Divided by zero" + e.getMessage());
 		}
 		System.out.println("After exception is handled");
 	}

@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.EXCEPTION_HANDLING.MethodOverridingWithExceptionHandling.Sample04;
+package Teacher.ADVANCED_TOPICs.EXCEPTION_HANDLING.MethodOverridingWithExceptionHandling.Sample04;
 
 public class Sample {
 
@@ -6,7 +6,8 @@ public class Sample {
 		try {
 			Super s = new Sub();
 			s.show();
-		} catch (Exception e) { }
+		} catch (Exception e) {
+		}
 	}
 }
 

@@ -1,4 +1,4 @@
-package JAVACORE_TRAINING.TEACHER.ADVANCED_TOPICs.EXCEPTION_HANDLING.ThrowsKeyword;
+package Teacher.ADVANCED_TOPICs.EXCEPTION_HANDLING.ThrowsKeyword;
 
 public class ExampleDemonstratingThrowsKeyword {
 

@@ -1,0 +1,11 @@
+Overviews
+--------------
+-  Những điều cần nhớ khi thực hiện ghi đè 
+<overriding a method with exception handling>
+	 phương thức xử lý ngoại lệ.
+-  Nếu phương thức lớp cơ sở không định nghĩa bất kỳ ngoại lệ nào --> 
+	thì phương thức lớp con khi override không thể
+	khai báo ngoại lệ kiểm tra<checked exception>. 
+	Nhưng nó có thể khai báo các ngoại lệ không kiểm soát<unchecked exceptions>.
+	
+	
