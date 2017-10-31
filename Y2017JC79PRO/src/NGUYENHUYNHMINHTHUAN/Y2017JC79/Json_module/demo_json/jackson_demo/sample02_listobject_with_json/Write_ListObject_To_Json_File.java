@@ -1,4 +1,4 @@
-package Teacher.Y2017JC79.Json_module.demo_json.jackson_demo.sample02_listobject_with_json;
+package NGUYENHUYNHMINHTHUAN.Y2017JC79.Json_module.demo_json.jackson_demo.sample02_listobject_with_json;
 
 import java.io.File;
 import java.io.IOException;
@@ -44,7 +44,7 @@ public class Write_ListObject_To_Json_File {
 		lisStudent.add(sv03);
 
 		// 5. Gọi mở cửa sổ chọn file và thực hiện ghi xuống file
-		File file = FilePath.SaveFile();
+		File file = FilePath.saveFile();
 
 		if (file != null) {
 			strFile = file.getAbsolutePath();
