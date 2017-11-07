@@ -48,10 +48,10 @@ public class ClientApps {
 
 	public void connectToServer() throws IOException {
 		// 1. Khai báo địa chỉ IP Server
-		String sServerAddress = "10.0.101.113";
+		String sServerAddress = "192.168.1.120";
 
 		// 2. Khởi tạo kết nối và khởi tạo streams
-		Socket objSocket = new Socket(sServerAddress, 9999);
+		Socket objSocket = new Socket(sServerAddress, 9899);
 		m_objBr = new BufferedReader(new InputStreamReader(objSocket.getInputStream()));
 		m_objPw = new PrintWriter(objSocket.getOutputStream(), true);
 
