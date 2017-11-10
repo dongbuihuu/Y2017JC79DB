@@ -8,5 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="src/Teacher/Y2017JC79/Json_module/vendorcomponent/javax.json-1.0.1.jar"/>
 	<classpathentry kind="lib" path="src/first_programming_truongnm/jdbc_library/sqljdbc4.jar"/>
 	<classpathentry kind="lib" path="src/first_programming_truongnm/jdbc/SQLjdbcLibrary.jar"/>
+	<classpathentry kind="lib" path="src/first_programming_truongnm/jdbc_stepbystep/JDBCConnectionChecking.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
