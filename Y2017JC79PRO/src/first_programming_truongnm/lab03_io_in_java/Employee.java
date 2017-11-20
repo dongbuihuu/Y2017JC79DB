@@ -1,5 +1,6 @@
 package first_programming_truongnm.lab03_io_in_java;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 public class Employee {
@@ -23,7 +24,11 @@ public class Employee {
 
 }
 
-class Information {
+class Information implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int employeeID;
 	private String employeeName;
 	private int employeeAge;
@@ -66,10 +71,11 @@ class Information {
 	}
 
 	@Override
+
 	public String toString() {
-		//
 		return String.format("ID: %s - Name: %s - Age: %s - Salary: %s ", employeeID, employeeName, employeeAge,
 				employeeSalary);
+
 	}
 
 }
