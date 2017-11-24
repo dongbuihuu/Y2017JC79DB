@@ -9,11 +9,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-public class ShowMessageDialogDemo extends JFrame implements ActionListener {
+public class JOptionPaneShowMessageDialogDemo extends JFrame implements ActionListener {
 	private JButton jbt1;
 	private JLabel jLabel;
 
-	public ShowMessageDialogDemo() {
+	public JOptionPaneShowMessageDialogDemo() {
 
 		this.setSize(500, 500);
 		this.setLocationRelativeTo(null);
@@ -43,7 +43,7 @@ public class ShowMessageDialogDemo extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new ShowMessageDialogDemo();
+		new JOptionPaneShowMessageDialogDemo();
 
 	}
 

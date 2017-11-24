@@ -9,11 +9,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-public class ShowConfirmDialogDemo extends JFrame implements ActionListener {
+public class JOptionPaneShowConfirmDialogDemo extends JFrame implements ActionListener {
 	private JButton jbt1;
 	private JLabel jLabel;
 
-	public ShowConfirmDialogDemo() {
+	public JOptionPaneShowConfirmDialogDemo() {
 
 		this.setSize(500, 500);
 		this.setLocationRelativeTo(null);
@@ -50,7 +50,7 @@ public class ShowConfirmDialogDemo extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new ShowConfirmDialogDemo();
+		new JOptionPaneShowConfirmDialogDemo();
 	}
 
 }
